@@ -13,6 +13,7 @@
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
 		818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */; };
 		818E63A91AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */; };
+		81FB5C4C1AA3CA7B003B83E3 /* PartyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		818E63A21AA3B12200BAFDD5 /* OneSoundV2DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSoundV2DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63A71AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSoundV2DemoTests.swift; sourceTree = "<group>"; };
+		81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				818E63921AA3B12200BAFDD5 /* AppDelegate.swift */,
 				818E63941AA3B12200BAFDD5 /* ViewController.swift */,
+				81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */,
 				818E63961AA3B12200BAFDD5 /* Main.storyboard */,
 				818E63991AA3B12200BAFDD5 /* Images.xcassets */,
 				818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81FB5C4C1AA3CA7B003B83E3 /* PartyPageViewController.swift in Sources */,
 				818E63951AA3B12200BAFDD5 /* ViewController.swift in Sources */,
 				818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				818E63AE1AA3B12200BAFDD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818E63AF1AA3B12200BAFDD5 /* Build configuration list for PBXNativeTarget "OneSoundV2DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				818E63B11AA3B12200BAFDD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

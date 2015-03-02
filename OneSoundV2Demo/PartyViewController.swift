@@ -9,13 +9,12 @@
 import UIKit
 
 class PartyViewController: UIViewController {
-    @IBOutlet weak var partyToolbar: UIToolbar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        partyToolbar.clipsToBounds = true;
+        // hide back button
+        self.navigationItem.setHidesBackButton(true, animated: true);
     }
 
     override func didReceiveMemoryWarning() {

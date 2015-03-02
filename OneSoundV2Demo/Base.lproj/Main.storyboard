@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ycv-gf-KbL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FT3-Ld-3zq">
+            <objects>
+                <navigationController id="ycv-gf-KbL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqw-0X-nTg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ghJ-ij-Jue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bb9-J1-12h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-699" y="253"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -26,31 +42,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3Wl-Bg-Gqz" kind="show" identifier="PartyVCSegue" id="6tc-g2-Pud"/>
+                                    <segue destination="3Nu-rB-Xvt" kind="show" id="Our-ys-g2h"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nj3-dc-A3Z">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Home" id="rQx-dS-Nwt">
-                                        <barButtonItem key="leftBarButtonItem" title="Profile" id="grl-wk-iXR">
-                                            <connections>
-                                                <segue destination="g7v-A0-dWG" kind="show" id="hOk-Ga-0Mj"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nj3-dc-A3Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="8pM-uA-B9M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1eg-Ob-AAE" secondAttribute="trailing" constant="247" id="A7K-f0-LWk"/>
-                            <constraint firstItem="nj3-dc-A3Z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Az6-GE-UXf"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1eg-Ob-AAE" secondAttribute="bottom" constant="285" id="EnZ-iQ-2dA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nj3-dc-A3Z" secondAttribute="trailing" constant="-16" id="Isy-TZ-XqO"/>
-                            <constraint firstItem="nj3-dc-A3Z" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="K2k-3M-ZbV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1eg-Ob-AAE" secondAttribute="trailing" constant="247" id="LmH-i0-1Ah"/>
                             <constraint firstItem="1eg-Ob-AAE" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="T8k-hc-WyR"/>
                             <constraint firstItem="1eg-Ob-AAE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Z87-Be-pxJ"/>
@@ -61,7 +60,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="K2k-3M-ZbV"/>
                                 <exclude reference="A7K-f0-LWk"/>
                                 <exclude reference="LmH-i0-1Ah"/>
                                 <exclude reference="dHX-K3-644"/>
@@ -72,110 +70,63 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Aep-1Z-iLB">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="250-Hm-sjn">
+                            <connections>
+                                <segue destination="Qpt-7h-mhZ" kind="show" id="K3l-hc-TGb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67" y="253"/>
         </scene>
         <!--Party View Controller-->
-        <scene sceneID="VuG-lf-9En">
+        <scene sceneID="x2L-gW-6wr">
             <objects>
-                <viewController id="3Wl-Bg-Gqz" customClass="PartyViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Nu-rB-Xvt" userLabel="Party View Controller" customClass="PartyViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3tb-TL-Hsa"/>
-                        <viewControllerLayoutGuide type="bottom" id="VXD-qK-7Hw"/>
+                        <viewControllerLayoutGuide type="top" id="Jxs-c9-JUv"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5S-29-t2J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IOC-DU-745">
+                    <view key="view" contentMode="scaleToFill" id="NQv-wo-HN5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1x-SX-rxx">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Party" id="aFZ-EC-oTY">
-                                        <barButtonItem key="leftBarButtonItem" title="Profile" id="R1O-qL-voM">
-                                            <connections>
-                                                <segue destination="g7v-A0-dWG" kind="show" id="skG-kR-kw9"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piX-UZ-hLl">
-                                <rect key="frame" x="511" y="20" width="73" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="sRq-EF-hgL"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem systemItem="edit" id="hGC-cF-EWH"/>
-                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="Pug-I3-xQI"/>
-                                    <barButtonItem style="plain" systemItem="add" id="9lj-eD-bzd"/>
-                                </items>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </toolbar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="piX-UZ-hLl" secondAttribute="trailing" constant="-16" id="238-oC-adh"/>
-                            <constraint firstItem="piX-UZ-hLl" firstAttribute="trailing" secondItem="IOC-DU-745" secondAttribute="trailingMargin" id="Dt5-Dx-WJl"/>
-                            <constraint firstItem="Q1x-SX-rxx" firstAttribute="leading" secondItem="IOC-DU-745" secondAttribute="leadingMargin" constant="-16" id="HAO-Az-pbI"/>
-                            <constraint firstItem="piX-UZ-hLl" firstAttribute="top" secondItem="3tb-TL-Hsa" secondAttribute="bottom" id="OIP-N8-oG1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Q1x-SX-rxx" secondAttribute="trailing" constant="-16" id="bi5-6B-lUm"/>
-                            <constraint firstItem="Q1x-SX-rxx" firstAttribute="top" secondItem="3tb-TL-Hsa" secondAttribute="bottom" id="ipF-1k-PMn"/>
-                            <constraint firstItem="Q1x-SX-rxx" firstAttribute="top" secondItem="IOC-DU-745" secondAttribute="topMargin" id="scO-Fn-dsU"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="scO-Fn-dsU"/>
-                                <exclude reference="238-oC-adh"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="partyToolbar" destination="piX-UZ-hLl" id="NML-Wr-MXi"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="WGI-jo-r8T">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="fng-6X-t9u">
+                            <connections>
+                                <segue destination="Qpt-7h-mhZ" kind="show" id="5YK-qO-nn1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxg-u8-meD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2d-aB-Eeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="253"/>
+            <point key="canvasLocation" x="879" y="253"/>
         </scene>
         <!--Profile View Controller-->
-        <scene sceneID="5o4-Y6-Lhd">
+        <scene sceneID="5DK-wV-uaC">
             <objects>
-                <viewController id="g7v-A0-dWG" customClass="ProfileViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qpt-7h-mhZ" userLabel="Profile View Controller" customClass="ProfileViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sco-IO-p2a"/>
-                        <viewControllerLayoutGuide type="bottom" id="gWa-82-b3b"/>
+                        <viewControllerLayoutGuide type="top" id="aFr-iD-KPT"/>
+                        <viewControllerLayoutGuide type="bottom" id="4W3-kM-zpq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xRp-Wa-95P">
+                    <view key="view" contentMode="scaleToFill" id="yhB-Co-O54">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQp-fA-MJM">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Profile" id="nyr-hs-mGt">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Uqa-o2-oL9"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="IQp-fA-MJM" firstAttribute="top" secondItem="sco-IO-p2a" secondAttribute="bottom" id="NWa-ZT-mZc"/>
-                            <constraint firstItem="IQp-fA-MJM" firstAttribute="leading" secondItem="xRp-Wa-95P" secondAttribute="leadingMargin" constant="-16" id="aa3-gx-RrY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IQp-fA-MJM" secondAttribute="trailing" constant="-16" id="uW4-Gw-GgE"/>
-                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M10-Ay-xcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5k-tH-ui8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="253"/>
+            <point key="canvasLocation" x="1596" y="253"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="skG-kR-kw9"/>
+        <segue reference="5YK-qO-nn1"/>
     </inferredMetricsTieBreakers>
 </document>

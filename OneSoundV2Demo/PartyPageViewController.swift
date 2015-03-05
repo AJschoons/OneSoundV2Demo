@@ -133,7 +133,9 @@ class PartyPageViewController: UIViewController {
     }
     
     func onProfileButton() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let profileView: ProfileViewController = storyboard.instantiateViewControllerWithIdentifier("profileViewController") as ProfileViewController
+        presentViewController(profileView, animated: true, completion: nil);
     }
 }
 

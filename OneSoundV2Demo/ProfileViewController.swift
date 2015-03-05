@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  OneSoundV2Demo
 //
-//  Created by Corbin Rangler on 3/1/15.
+//  Created by Corbin Rangler on 3/5/15.
 //  Copyright (c) 2015 Adam Schoonmaker. All rights reserved.
 //
 

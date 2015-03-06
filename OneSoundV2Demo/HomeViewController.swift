@@ -32,17 +32,24 @@ class HomeViewController: UIViewController {
         let profileViewController = ProfileViewController(nibName: ProfileViewControllerNibName, bundle: nil)
         let navC = UINavigationController(rootViewController: profileViewController)
         presentViewController(navC, animated: true, completion: nil)
-        //navigationController?.pushViewController(profileViewController, animated: true)
+        
+        /*UIView.transitionWithView(profileViewController.view, duration: 0.5, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations: {
+            presentViewController(navC, animated: true, completion: nil);
+            }, completion: nil)*/
 
     }
     
     func party() {
         let partyPageViewController = PartyPageViewController()
         let navC = UINavigationController(rootViewController: partyPageViewController)
+
+        if let window = (UIApplication.sharedApplication().delegate as AppDelegate).window {
         
-        (UIApplication.sharedApplication().delegate as AppDelegate).window?.rootViewController = navC
-        
-        //presentViewController(navC, animated: true, completion: nil)
+            UIView.transitionWithView(window, duration: 0.5, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations: {
+            window.rootViewController = navC;
+        }, completion: nil)
+        }
+
     }
 
 }

@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="OneSoundV2Demo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PartyEditViewController" customModule="OneSoundV2Demo" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="Kna-C9-I84"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bKd-6U-OO4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

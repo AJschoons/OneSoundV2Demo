@@ -127,11 +127,17 @@ class PartyPageViewController: UIViewController {
     */
     
     func onAddSongButton() {
+        let addSongViewController = AddSongViewController(nibName: AddSongViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: addSongViewController)
+        presentViewController(navC, animated: true, completion: nil)
         
     }
     
     func onEditPartySettingsButton() {
-        
+        let partyEditViewController = PartyEditViewController(nibName: PartyEditViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: partyEditViewController)
+        presentViewController(navC, animated: true, completion: nil)
+
     }
     
     func onProfileButton() {

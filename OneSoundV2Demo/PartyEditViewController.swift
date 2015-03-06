@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  PartyEditViewController.swift
 //  OneSoundV2Demo
 //
 //  Created by Corbin Rangler on 3/5/15.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-let ProfileViewControllerNibName = "ProfileViewController"
+let PartyEditViewControllerNibName = "PartyEditViewController"
 
-class ProfileViewController: UIViewController {
+class PartyEditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = "Profile"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "back")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .Plain, target: self, action: "settings")
+        navigationItem.title = "Party Settings"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Leave", style: .Plain, target: self, action: "leaveParty")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "done")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +26,15 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func back() {
+    func done() {
         view.endEditing(true)
         dismissViewControllerAnimated(true, completion: nil)
     }
-    func settings() {
-        let profileEditViewController = ProfileEditViewController(nibName: ProfileEditViewControllerNibName, bundle: nil)
-        let navC = UINavigationController(rootViewController: profileEditViewController)
+    
+    func leaveParty() {
+        let homeViewController = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: homeViewController)
         presentViewController(navC, animated: true, completion: nil)
-
     }
     
 

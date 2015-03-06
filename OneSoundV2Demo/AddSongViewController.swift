@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  AddSongViewController.swift
 //  OneSoundV2Demo
 //
 //  Created by Corbin Rangler on 3/5/15.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-let ProfileViewControllerNibName = "ProfileViewController"
+let AddSongViewControllerNibName = "AddSongViewController"
 
-class ProfileViewController: UIViewController {
+class AddSongViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = "Profile"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "back")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .Plain, target: self, action: "settings")
+        navigationItem.title = "Add Song"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "done")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +25,9 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func back() {
+    func done() {
         view.endEditing(true)
         dismissViewControllerAnimated(true, completion: nil)
-    }
-    func settings() {
-        let profileEditViewController = ProfileEditViewController(nibName: ProfileEditViewControllerNibName, bundle: nil)
-        let navC = UINavigationController(rootViewController: profileEditViewController)
-        presentViewController(navC, animated: true, completion: nil)
-
     }
     
 

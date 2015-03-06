@@ -8,17 +8,26 @@
 
 import UIKit
 
+let ProfileViewControllerNibName = "ProfileViewController"
+
 class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.title = "Profile"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "back")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func back() {
+        view.endEditing(true)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
 

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */; };
+		2BD13CFC1AA93AB700A4AE64 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */; };
+		2BD13CFE1AA9473100A4AE64 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */; };
 		818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63921AA3B12200BAFDD5 /* AppDelegate.swift */; };
 		818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63941AA3B12200BAFDD5 /* HomeViewController.swift */; };
-		818E63981AA3B12200BAFDD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818E63961AA3B12200BAFDD5 /* Main.storyboard */; };
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
 		818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */; };
 		818E63A91AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */; };
@@ -29,11 +30,12 @@
 
 /* Begin PBXFileReference section */
 		2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		818E638D1AA3B12200BAFDD5 /* OneSoundV2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSoundV2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63911AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63921AA3B12200BAFDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818E63941AA3B12200BAFDD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		818E63971AA3B12200BAFDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818E63991AA3B12200BAFDD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		818E639C1AA3B12200BAFDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		818E63A21AA3B12200BAFDD5 /* OneSoundV2DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSoundV2DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +87,8 @@
 				818E63941AA3B12200BAFDD5 /* HomeViewController.swift */,
 				81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */,
 				2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */,
-				818E63961AA3B12200BAFDD5 /* Main.storyboard */,
+				2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */,
+				2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */,
 				818E63991AA3B12200BAFDD5 /* Images.xcassets */,
 				818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */,
 				818E63901AA3B12200BAFDD5 /* Supporting Files */,
@@ -199,9 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818E63981AA3B12200BAFDD5 /* Main.storyboard in Resources */,
 				818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */,
 				818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */,
+				2BD13CFE1AA9473100A4AE64 /* ProfileViewController.xib in Resources */,
+				2BD13CFC1AA93AB700A4AE64 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,14 +249,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		818E63961AA3B12200BAFDD5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				818E63971AA3B12200BAFDD5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,6 +8,8 @@
 
 import UIKit
 
+let PartyPageViewControllerNibName = "PartyPageViewController"
+
 class PartyPageViewController: UIViewController {
 
     private var scrollView: UIScrollView!
@@ -133,9 +135,10 @@ class PartyPageViewController: UIViewController {
     }
     
     func onProfileButton() {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let profileView: ProfileViewController = storyboard.instantiateViewControllerWithIdentifier("profileViewController") as ProfileViewController
-        presentViewController(profileView, animated: true, completion: nil);
+        let profileViewController = ProfileViewController(nibName: ProfileViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: profileViewController)
+        presentViewController(navC, animated: true, completion: nil)
+
     }
 }
 

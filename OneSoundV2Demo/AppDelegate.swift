@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setupAppWindowAndViewHierarchy()
         return true
     }
 
@@ -41,6 +41,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
+}
+extension AppDelegate {
+    func setupAppWindowAndViewHierarchy() {
+        // Setup the front nav controller to initially have the splash screen visible with a (determined) view controller as it's rootViewController
+        // By default starts at the profile page (for now)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let hvc = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
+        //let hvc = PartyPageViewController(nibName: PartyPageViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: hvc)
+
+        window!.rootViewController = navC
+        window!.makeKeyAndVisible()
+        
+    }
 
 }
 

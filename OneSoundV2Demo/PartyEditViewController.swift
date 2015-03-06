@@ -34,7 +34,13 @@ class PartyEditViewController: UIViewController {
     func leaveParty() {
         let homeViewController = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
         let navC = UINavigationController(rootViewController: homeViewController)
-        presentViewController(navC, animated: true, completion: nil)
+
+        if let window = (UIApplication.sharedApplication().delegate as AppDelegate).window {
+            
+            UIView.transitionWithView(window, duration: 0.5, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations: {
+                window.rootViewController = navC;
+                }, completion: nil)
+        }
     }
     
 

@@ -18,6 +18,13 @@ class AddSongViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationItem.title = "Add Song"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "done")
+        
+        //hide default back button. back is implemented in "done()"
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        if let background = (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage {
+            self.view.addSubview(UIImageView(image: background))
+        }
     }
 
     override func didReceiveMemoryWarning() {

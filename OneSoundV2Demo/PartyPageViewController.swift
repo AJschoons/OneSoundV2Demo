@@ -24,6 +24,10 @@ class PartyPageViewController: UIViewController {
     private let navbarButtonSize: CGFloat = 22
     private let navbarButtonSpacing: CGFloat = 15
     
+    var defaultNavigationControllerDelegate: UINavigationControllerDelegate?
+    
+    var newNavBar: UINavigationBar?
+    
     override func loadView() {
         super.loadView()
         
@@ -53,55 +57,12 @@ class PartyPageViewController: UIViewController {
         memberPageView.frame = CGRect(x: 1*viewWidth, y: 0, width: viewWidth, height: viewHeight) // start at x=viewWidth
         scrollView.addSubview(memberPageView)
         
-        // Start setting up nav bar and its items
-        navbarView = UIView()
-        
-        // Setup nav labels
-        // Width is the largest size remaining after accounting for 2 nav bar buttons & spacing b/w them
-        let navTitleWidth: CGFloat = viewWidth - 2*(3*navbarButtonSpacing + 2*navbarButtonSize)
-        let navTitleHeight: CGFloat = 20
-        var navTitleX: CGFloat = (viewWidth / 2) - (navTitleWidth / 2)
-        let navTitleY: CGFloat = 8
-        navTitleLabel = UILabel()
-        navTitleLabel.textAlignment = NSTextAlignment.Center
-        navTitleLabel.text = "A Long Party Name"
-        navTitleLabel.frame = CGRect(x: navTitleX, y: navTitleY, width: navTitleWidth, height: navTitleHeight)
-        navbarView.addSubview(navTitleLabel)
-        
-        // Setup page control
-        // To get smaller pageControl dots... https://github.com/Spaceman-Labs/SMPageControl
-        pageControl = UIPageControl()
-        pageControl.frame = CGRect(x: 0, y: 35, width: 0, height: 0)
-        pageControl.numberOfPages = 2
-        pageControl.currentPage = 0
-        pageControl.currentPageIndicatorTintColor = UIColor.greenColor()
-        pageControl.pageIndicatorTintColor = UIColor.darkGrayColor()
-        navbarView.addSubview(pageControl)
-        
-        // Add the custom navigation bar to this view controller's navigation controller
-        navigationController?.navigationBar.addSubview(navbarView)
-        
-        // Setup nav bar buttons
-        let addSongButton = UIButton(frame: CGRect(x: viewWidth - navbarButtonSize - navbarButtonSpacing, y: navbarHeight/2 - navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
-        addSongButton.backgroundColor = UIColor.greenColor()
-        addSongButton.addTarget(self, action: "onAddSongButton", forControlEvents: UIControlEvents.TouchUpInside)
-        navbarView.addSubview(addSongButton)
-        
-        let editPartySettingsButton = UIButton(frame: CGRect(x: viewWidth - 2*navbarButtonSize - 2*navbarButtonSpacing, y: navbarHeight/2 - navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
-        editPartySettingsButton.backgroundColor = UIColor.greenColor()
-        editPartySettingsButton.addTarget(self, action: "onEditPartySettingsButton", forControlEvents: UIControlEvents.TouchUpInside)
-        navbarView.addSubview(editPartySettingsButton)
-        
-        let profileButton = UIButton(frame: CGRect(x: navbarButtonSpacing, y: navbarHeight/2 - navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
-        profileButton.backgroundColor = UIColor.greenColor()
-        profileButton.addTarget(self, action: "onProfileButton", forControlEvents: UIControlEvents.TouchUpInside)
-        navbarView.addSubview(profileButton)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        createNavBar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,6 +74,10 @@ class PartyPageViewController: UIViewController {
         super.viewWillLayoutSubviews()
         let viewWidth = Int(CGRectGetWidth(view.frame))
         navbarView.frame = CGRect(x: 0, y: 0, width: viewWidth, height: Int(navbarHeight))
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        navbarView?.hidden = false
     }
     
 
@@ -127,24 +92,115 @@ class PartyPageViewController: UIViewController {
     */
     
     func onAddSongButton() {
+        navbarView?.hidden = true
         let addSongViewController = AddSongViewController(nibName: AddSongViewControllerNibName, bundle: nil)
         let navC = UINavigationController(rootViewController: addSongViewController)
         presentViewController(navC, animated: true, completion: nil)
         
+        updateBlur()
+        
     }
     
     func onEditPartySettingsButton() {
+        navbarView?.hidden = true
         let partyEditViewController = PartyEditViewController(nibName: PartyEditViewControllerNibName, bundle: nil)
         let navC = UINavigationController(rootViewController: partyEditViewController)
         presentViewController(navC, animated: true, completion: nil)
+        
+        updateBlur()
 
     }
     
     func onProfileButton() {
-        let profileViewController = ProfileViewController(nibName: ProfileViewControllerNibName, bundle: nil)
-        let navC = UINavigationController(rootViewController: profileViewController)
-        presentViewController(navC, animated: true, completion: nil)
+        
+        navigationController?.popViewControllerAnimated(true)
+        
 
+    }
+    
+    func createNavBar() {
+        //1. hide Nav Bar
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        // 2. create a new nav bar and style it
+        newNavBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: CGRectGetWidth(self.view.bounds), height: 64.0))
+        // Sets background to a blank/empty image
+        //newNavBar!.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        //newNavBar!.translucent = true
+        
+        // 3. add a new navigation item w/title to the new nav bar
+        //UINavigationItem *newItem = [[UINavigationItem alloc] init];
+        //newItem.title = @"Paths";
+        //[newNavBar setItems:@[newItem]];
+        
+        // 4. add the nav bar to the main view
+        //[self.view addSubview:newNavBar];
+        view.addSubview(newNavBar!)
+        
+        let viewWidth = CGRectGetWidth(view.frame)
+        let viewHeight = CGRectGetHeight(view.frame)
+
+        // Start setting up nav bar and its items
+        navbarView = UIView()
+        
+        // Setup nav labels
+        // Width is the largest size remaining after accounting for 2 nav bar buttons & spacing b/w them
+        let navTitleWidth: CGFloat = viewWidth - 2*(3*navbarButtonSpacing + 2*navbarButtonSize)
+        let navTitleHeight: CGFloat = 20
+        var navTitleX: CGFloat = (viewWidth / 2) - (navTitleWidth / 2)
+        let navTitleY: CGFloat = (navbarHeight/2) + (navbarButtonSize/2)//8
+        navTitleLabel = UILabel()
+        navTitleLabel.textAlignment = NSTextAlignment.Center
+        navTitleLabel.text = "A Long Party Name"
+        navTitleLabel.frame = CGRect(x: navTitleX, y: navTitleY, width: navTitleWidth, height: navTitleHeight)
+        navbarView.addSubview(navTitleLabel)
+        
+        // Setup page control
+        // To get smaller pageControl dots... https://github.com/Spaceman-Labs/SMPageControl
+        pageControl = UIPageControl()
+        pageControl.frame = CGRect(x: 0, y: 55, width: 0, height: 0) //y:35
+        pageControl.numberOfPages = 2
+        pageControl.currentPage = 0
+        pageControl.currentPageIndicatorTintColor = UIColor.greenColor()
+        pageControl.pageIndicatorTintColor = UIColor.darkGrayColor()
+        navbarView.addSubview(pageControl)
+        
+        // Add the custom navigation bar to this view controller's navigation controller
+        //navigationController?.navigationBar.addSubview(navbarView)
+        newNavBar!.addSubview(navbarView)
+        
+        // Setup nav bar buttons
+        let addSongButton = UIButton(frame: CGRect(x: viewWidth - navbarButtonSize - navbarButtonSpacing, y: navbarHeight/2 + navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
+        addSongButton.backgroundColor = UIColor.greenColor()
+        addSongButton.addTarget(self, action: "onAddSongButton", forControlEvents: UIControlEvents.TouchUpInside)
+        navbarView.addSubview(addSongButton)
+        
+        let editPartySettingsButton = UIButton(frame: CGRect(x: viewWidth - 2*navbarButtonSize - 2*navbarButtonSpacing, y: navbarHeight/2 + navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
+        editPartySettingsButton.backgroundColor = UIColor.greenColor()
+        editPartySettingsButton.addTarget(self, action: "onEditPartySettingsButton", forControlEvents: UIControlEvents.TouchUpInside)
+        navbarView.addSubview(editPartySettingsButton)
+        
+        let profileButton = UIButton(frame: CGRect(x: navbarButtonSpacing, y: navbarHeight/2 + navbarButtonSize/2, width: navbarButtonSize, height: navbarButtonSize))
+        profileButton.backgroundColor = UIColor.greenColor()
+        profileButton.layer.cornerRadius = 0.5 * profileButton.bounds.size.width
+        profileButton.addTarget(self, action: "onProfileButton", forControlEvents: UIControlEvents.TouchUpInside)
+        navbarView.addSubview(profileButton)
+    }
+    func updateBlur() {
+        //1 need new image context to take screenshot
+        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, true, 1)
+        
+        //2
+        self.view.drawViewHierarchyInRect(self.view.bounds, afterScreenUpdates: true)
+        
+        //3
+        let screenShot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        //From UIImage Effects Objective C file
+        let blur = screenShot.applyLightEffect()
+        
+        (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage = blur
     }
 }
 

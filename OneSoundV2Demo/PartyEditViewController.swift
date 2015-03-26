@@ -19,6 +19,13 @@ class PartyEditViewController: UIViewController {
         navigationItem.title = "Party Settings"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Leave", style: .Plain, target: self, action: "leaveParty")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Plain, target: self, action: "done")
+        
+        //hide default back button. back is implemented in "done()"
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        if let background = (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage {
+            self.view.addSubview(UIImageView(image: background))
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +39,13 @@ class PartyEditViewController: UIViewController {
     }
     
     func leaveParty() {
-        let homeViewController = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
-        let navC = UINavigationController(rootViewController: homeViewController)
+        let profileViewController = ProfileViewController()
+        let homeViewController = HomeViewController()//HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
+        let navC = UINavigationController(rootViewController: profileViewController)
+        navC.pushViewController(homeViewController, animated: false)
+        
+        //So profile knows what to go "back" to
+        (UIApplication.sharedApplication().delegate as AppDelegate).appRootViewController = AppRootViewController.Home
 
         if let window = (UIApplication.sharedApplication().delegate as AppDelegate).window {
             

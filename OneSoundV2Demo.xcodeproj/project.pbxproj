@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */; };
+		2B0577161AC347120019A6AC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */; };
 		2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */; };
 		2BD13CFC1AA93AB700A4AE64 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */; };
 		2BD13CFE1AA9473100A4AE64 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */; };
@@ -16,6 +18,8 @@
 		2BD13D0A1AA954D800A4AE64 /* ProfileEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13D091AA954D800A4AE64 /* ProfileEditViewController.xib */; };
 		2BD13D0C1AA95AE300A4AE64 /* AddSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13D0B1AA95AE300A4AE64 /* AddSongViewController.swift */; };
 		2BD13D0E1AA95B0C00A4AE64 /* AddSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13D0D1AA95B0C00A4AE64 /* AddSongViewController.xib */; };
+		2BF91E781AAB5B310079CF08 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */; };
+		2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */; };
 		818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63921AA3B12200BAFDD5 /* AppDelegate.swift */; };
 		818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63941AA3B12200BAFDD5 /* HomeViewController.swift */; };
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromProfileTransitionAnimator.swift; sourceTree = "<group>"; };
+		2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "OneSoundV2Demo/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "OneSoundV2Demo/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		2B0577181AC34A2A0019A6AC /* OneSoundBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSoundBridgingHeader.h; sourceTree = "<group>"; };
 		2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		2BD13D091AA954D800A4AE64 /* ProfileEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileEditViewController.xib; sourceTree = "<group>"; };
 		2BD13D0B1AA95AE300A4AE64 /* AddSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
 		2BD13D0D1AA95B0C00A4AE64 /* AddSongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSongViewController.xib; sourceTree = "<group>"; };
+		2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToProfileTransitionAnimator.swift; sourceTree = "<group>"; };
 		818E638D1AA3B12200BAFDD5 /* OneSoundV2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSoundV2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63911AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63921AA3B12200BAFDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,9 @@
 		818E63841AA3B12200BAFDD5 = {
 			isa = PBXGroup;
 			children = (
+				2B0577181AC34A2A0019A6AC /* OneSoundBridgingHeader.h */,
+				2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */,
+				2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */,
 				818E638F1AA3B12200BAFDD5 /* OneSoundV2Demo */,
 				818E63A51AA3B12200BAFDD5 /* OneSoundV2DemoTests */,
 				818E638E1AA3B12200BAFDD5 /* Products */,
@@ -110,6 +123,9 @@
 				818E63991AA3B12200BAFDD5 /* Images.xcassets */,
 				818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */,
 				818E63901AA3B12200BAFDD5 /* Supporting Files */,
+				2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */,
+				2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */,
+				2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */,
 			);
 			path = OneSoundV2Demo;
 			sourceTree = "<group>";
@@ -248,6 +264,10 @@
 				818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */,
 				2BD13D041AA9543300A4AE64 /* PartyEditViewController.swift in Sources */,
 				2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */,
+				2B0577161AC347120019A6AC /* UIImage+ImageEffects.m in Sources */,
+				2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */,
+				2BF91E781AAB5B310079CF08 /* NavigationControllerDelegate.swift in Sources */,
+				2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */,
 				2BD13D061AA9545400A4AE64 /* ProfileEditViewController.swift in Sources */,
 				818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */,
 				2BD13D0C1AA95AE300A4AE64 /* AddSongViewController.swift in Sources */,
@@ -322,6 +342,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = OneSoundBridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -357,6 +378,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = OneSoundBridgingHeader.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

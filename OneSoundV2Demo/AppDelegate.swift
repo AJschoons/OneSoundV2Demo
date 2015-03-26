@@ -8,14 +8,27 @@
 
 import UIKit
 
+enum AppRootViewController {
+    case Home, Party
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var ncd: NavigationControllerDelegate?// = NavigationControllerDelegate()
+    
+    var appRootViewController = AppRootViewController.Home
+    
+    var settingsBackgroundImage: UIImage?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         setupAppWindowAndViewHierarchy()
+        ncd = NavigationControllerDelegate()
+        //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        
         return true
     }
 
@@ -49,14 +62,20 @@ extension AppDelegate {
         // By default starts at the profile page (for now)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let hvc = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
-        //let hvc = PartyPageViewController(nibName: PartyPageViewControllerNibName, bundle: nil)
-        let navC = UINavigationController(rootViewController: hvc)
-
+        //use nib, but programmatically allows custom animations
+        //let hvc = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
+        //let navC = UINavigationController(rootViewController: hvc)
+        
+        let homeViewController = HomeViewController()
+        let profileViewController = ProfileViewController()
+        let navC = UINavigationController(rootViewController: profileViewController)
+        navC.pushViewController(homeViewController, animated: false)
+        
         window!.rootViewController = navC
         window!.makeKeyAndVisible()
         
     }
 
 }
+
 

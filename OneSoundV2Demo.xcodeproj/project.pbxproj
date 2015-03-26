@@ -25,6 +25,8 @@
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
 		818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */; };
 		818E63A91AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */; };
+		81B7398C1AA957B500900FBA /* PartyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398B1AA957B500900FBA /* PartyContentViewController.swift */; };
+		81B7398E1AA9584E00900FBA /* PartyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398D1AA9584E00900FBA /* PartyMemberViewController.swift */; };
 		81FB5C4C1AA3CA7B003B83E3 /* PartyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +64,11 @@
 		818E63A21AA3B12200BAFDD5 /* OneSoundV2DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSoundV2DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63A71AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSoundV2DemoTests.swift; sourceTree = "<group>"; };
+		81B7398B1AA957B500900FBA /* PartyContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyContentViewController.swift; sourceTree = "<group>"; };
+		81B7398D1AA9584E00900FBA /* PartyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyMemberViewController.swift; sourceTree = "<group>"; };
 		81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyPageViewController.swift; sourceTree = "<group>"; };
+		CC35E083D2F498AE42A8030C /* Pods-OneSoundV2Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSoundV2Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo.release.xcconfig"; sourceTree = "<group>"; };
+		E15A09DC252DEA058E3E8E5E /* libPods-OneSoundV2Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSoundV2Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5A38757E0A12C3FF70C337 /* libPods-OneSoundV2Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		606BA68CBF1F2928A1351581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF795AA2A39C9F234DC48C0 /* Pods-OneSoundV2Demo.debug.xcconfig */,
+				CC35E083D2F498AE42A8030C /* Pods-OneSoundV2Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		818E63841AA3B12200BAFDD5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +107,8 @@
 				818E638F1AA3B12200BAFDD5 /* OneSoundV2Demo */,
 				818E63A51AA3B12200BAFDD5 /* OneSoundV2DemoTests */,
 				818E638E1AA3B12200BAFDD5 /* Products */,
+				606BA68CBF1F2928A1351581 /* Pods */,
+				B8174403A567876062AD5F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +128,8 @@
 				2BD13D0B1AA95AE300A4AE64 /* AddSongViewController.swift */,
 				818E63941AA3B12200BAFDD5 /* HomeViewController.swift */,
 				81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */,
+				81B7398B1AA957B500900FBA /* PartyContentViewController.swift */,
+				81B7398D1AA9584E00900FBA /* PartyMemberViewController.swift */,
 				2BD13D031AA9543300A4AE64 /* PartyEditViewController.swift */,
 				2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */,
 				2BD13D051AA9545400A4AE64 /* ProfileEditViewController.swift */,
@@ -153,6 +173,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B8174403A567876062AD5F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15A09DC252DEA058E3E8E5E /* libPods-OneSoundV2Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 818E63AC1AA3B12200BAFDD5 /* Build configuration list for PBXNativeTarget "OneSoundV2Demo" */;
 			buildPhases = (
+				F8752A9AA79247647D0003F5 /* Check Pods Manifest.lock */,
 				818E63891AA3B12200BAFDD5 /* Sources */,
 				818E638A1AA3B12200BAFDD5 /* Frameworks */,
 				818E638B1AA3B12200BAFDD5 /* Resources */,
+				FF1975C0F988868F8F8C40CD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +283,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F8752A9AA79247647D0003F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1975C0F988868F8F8C40CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		818E63891AA3B12200BAFDD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +331,7 @@
 				2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */,
 				2BD13D061AA9545400A4AE64 /* ProfileEditViewController.swift in Sources */,
 				818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */,
+				81B7398E1AA9584E00900FBA /* PartyMemberViewController.swift in Sources */,
 				2BD13D0C1AA95AE300A4AE64 /* AddSongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,23 +447,30 @@
 		};
 		818E63AD1AA3B12200BAFDD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF795AA2A39C9F234DC48C0 /* Pods-OneSoundV2Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneSoundV2Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneSoundV2Demo/OneSoundV2Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		818E63AE1AA3B12200BAFDD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC35E083D2F498AE42A8030C /* Pods-OneSoundV2Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneSoundV2Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneSoundV2Demo/OneSoundV2Demo-Bridging-Header.h";
 			};
 			name = Release;
 		};

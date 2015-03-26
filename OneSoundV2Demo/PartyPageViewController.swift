@@ -13,11 +13,11 @@ let PartyPageViewControllerNibName = "PartyPageViewController"
 class PartyPageViewController: UIViewController {
 
     private var scrollView: UIScrollView!
-    private var contentPageView: UIView!
     private var memberPageView: UIView!
     
     private var navbarView: UIView!
-    private let navbarHeight: CGFloat = 44
+    let navbarHeight: CGFloat = 44
+    let statusBarHeight: CGFloat = 20
     private var navTitleLabel: UILabel!
     private var pageControl: UIPageControl!
     // To get smaller pageControl dots... https://github.com/Spaceman-Labs/SMPageControl
@@ -43,13 +43,15 @@ class PartyPageViewController: UIViewController {
         let viewWidth = CGRectGetWidth(view.frame)
         let viewHeight = CGRectGetHeight(view.frame)
         let numberOfPages: CGFloat = 2
-        scrollView.contentSize = CGSize(width: viewWidth*numberOfPages, height: viewHeight - navbarHeight)
+        scrollView.contentSize = CGSize(width: viewWidth*numberOfPages, height: viewHeight)
         
         // Setup content page view
-        contentPageView = UIView()
-        contentPageView.backgroundColor = UIColor.redColor()
-        contentPageView.frame = CGRect(x: 0*viewWidth, y: 0, width: viewWidth, height: viewHeight) // start at x=0
-        scrollView.addSubview(contentPageView)
+        partyContentViewController = PartyContentViewController()
+        partyContentViewController.partyPageViewController = self
+        partyContentViewController.view.backgroundColor = UIColor.redColor()
+        // start at x=0
+        partyContentViewController.view.frame = CGRect(x: 0*viewWidth, y: 0, width: viewWidth, height: viewHeight)
+        scrollView.addSubview(partyContentViewController.view)
         
         // Setup member page view
         memberPageView = UIView()

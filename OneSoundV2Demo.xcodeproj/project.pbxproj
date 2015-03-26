@@ -266,6 +266,7 @@
 			files = (
 				2BD13D0E1AA95B0C00A4AE64 /* AddSongViewController.xib in Resources */,
 				2BD13D0A1AA954D800A4AE64 /* ProfileEditViewController.xib in Resources */,
+				811D28BB1AC4D13E00C5F6CA /* Podfile in Resources */,
 				2BD13D081AA954AC00A4AE64 /* PartyEditViewController.xib in Resources */,
 				818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */,
 				818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */,

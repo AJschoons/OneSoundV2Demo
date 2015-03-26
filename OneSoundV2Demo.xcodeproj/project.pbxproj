@@ -42,7 +42,6 @@
 		2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromProfileTransitionAnimator.swift; sourceTree = "<group>"; };
 		2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "OneSoundV2Demo/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "OneSoundV2Demo/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		2B0577181AC34A2A0019A6AC /* OneSoundBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSoundBridgingHeader.h; sourceTree = "<group>"; };
 		2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		818E63841AA3B12200BAFDD5 = {
 			isa = PBXGroup;
 			children = (
-				2B0577181AC34A2A0019A6AC /* OneSoundBridgingHeader.h */,
 				2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */,
 				2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */,
 				818E638F1AA3B12200BAFDD5 /* OneSoundV2Demo */,

@@ -29,7 +29,12 @@ class PartyPageViewController: UIViewController {
     var newNavBar: UINavigationBar?
     
     override func loadView() {
-        super.loadView()
+        // Setup base view
+        let screenRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenRect.size.width
+        let screenHeight = screenRect.size.height
+        view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+
         
         // Setup scroll view
         scrollView = UIScrollView(frame: view.frame)

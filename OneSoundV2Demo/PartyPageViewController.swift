@@ -28,6 +28,8 @@ class PartyPageViewController: UIViewController {
     
     var newNavBar: UINavigationBar?
     
+    var partyContentViewController: PartyContentViewController!
+    
     override func loadView() {
         // Setup base view
         let screenRect = UIScreen.mainScreen().bounds

@@ -27,7 +27,12 @@ class PartyPageViewController: UIViewController {
     private var partyContentViewController: PartyContentViewController!
     
     override func loadView() {
-        super.loadView()
+        // Setup base view
+        let screenRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenRect.size.width
+        let screenHeight = screenRect.size.height
+        view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+
         
         // Setup scroll view
         scrollView = UIScrollView(frame: view.frame)

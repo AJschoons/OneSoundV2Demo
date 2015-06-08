@@ -209,7 +209,7 @@ class PartyPageViewController: UIViewController {
         //From UIImage Effects Objective C file
         let blur = screenShot.applyLightEffect()
         
-        (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage = blur
+        (UIApplication.sharedApplication().delegate as! AppDelegate).settingsBackgroundImage = blur
     }
 }
 

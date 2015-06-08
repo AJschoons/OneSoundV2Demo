@@ -23,7 +23,7 @@ class PartyEditViewController: UIViewController {
         //hide default back button. back is implemented in "done()"
         navigationItem.setHidesBackButton(true, animated: false)
         
-        if let background = (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage {
+        if let background = (UIApplication.sharedApplication().delegate as! AppDelegate).settingsBackgroundImage {
             self.view.addSubview(UIImageView(image: background))
         }
     }
@@ -45,9 +45,9 @@ class PartyEditViewController: UIViewController {
         navC.pushViewController(homeViewController, animated: false)
         
         //So profile knows what to go "back" to
-        (UIApplication.sharedApplication().delegate as AppDelegate).appRootViewController = AppRootViewController.Home
+        (UIApplication.sharedApplication().delegate as! AppDelegate).appRootViewController = AppRootViewController.Home
 
-        if let window = (UIApplication.sharedApplication().delegate as AppDelegate).window {
+        if let window = (UIApplication.sharedApplication().delegate as! AppDelegate).window {
             
             UIView.transitionWithView(window, duration: 0.5, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations: {
                 window.rootViewController = navC;

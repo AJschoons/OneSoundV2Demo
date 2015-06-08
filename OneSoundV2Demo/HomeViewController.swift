@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = UIColor.grayColor()
         createNavBar()
         
-        let partyButton   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+        let partyButton   = UIButton.buttonWithType(UIButtonType.System) as! UIButton
         partyButton.frame = CGRectMake(self.view.center.x - 50, self.view.center.y - 25, 100, 50)
         partyButton.backgroundColor = UIColor.whiteColor()
         partyButton.layer.cornerRadius = 0.25*partyButton.bounds.width
@@ -72,10 +72,10 @@ class HomeViewController: UIViewController {
         navC.pushViewController(partyPageViewController, animated: false)
         
         //So profile knows what to go "back" to
-        (UIApplication.sharedApplication().delegate as AppDelegate).appRootViewController = AppRootViewController.Party
+        (UIApplication.sharedApplication().delegate as! AppDelegate).appRootViewController = AppRootViewController.Party
         
 
-        if let window = (UIApplication.sharedApplication().delegate as AppDelegate).window {
+        if let window = (UIApplication.sharedApplication().delegate as! AppDelegate).window {
         
             UIView.transitionWithView(window, duration: 0.5, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
             window.rootViewController = navC;

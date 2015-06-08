@@ -15,7 +15,7 @@ class ProfileEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let background = (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage {
+        if let background = (UIApplication.sharedApplication().delegate as! AppDelegate).settingsBackgroundImage {
             self.view.addSubview(UIImageView(image: background))
         }
 

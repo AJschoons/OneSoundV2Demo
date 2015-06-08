@@ -22,7 +22,7 @@ class AddSongViewController: UIViewController {
         //hide default back button. back is implemented in "done()"
         navigationItem.setHidesBackButton(true, animated: false)
         
-        if let background = (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage {
+        if let background = (UIApplication.sharedApplication().delegate as! AppDelegate).settingsBackgroundImage {
             self.view.addSubview(UIImageView(image: background))
         }
     }

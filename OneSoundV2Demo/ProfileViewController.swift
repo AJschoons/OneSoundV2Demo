@@ -54,7 +54,7 @@ class ProfileViewController: UIViewController {
     }
     
     func onBackButton() {
-        switch (UIApplication.sharedApplication().delegate as AppDelegate).appRootViewController {
+        switch (UIApplication.sharedApplication().delegate as! AppDelegate).appRootViewController {
         case AppRootViewController.Home:
             let homeViewController = HomeViewController()
             navigationController?.pushViewController(homeViewController, animated: true)
@@ -149,7 +149,7 @@ class ProfileViewController: UIViewController {
         //From UIImage Effects Objective C file
         let blur = screenShot.applyLightEffect()
         
-        (UIApplication.sharedApplication().delegate as AppDelegate).settingsBackgroundImage = blur
+        (UIApplication.sharedApplication().delegate as! AppDelegate).settingsBackgroundImage = blur
         
         //return UIImageView(image: blur)
         

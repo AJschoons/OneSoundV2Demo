@@ -10,7 +10,6 @@
 		2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */; };
 		2B0577161AC347120019A6AC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */; };
 		2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */; };
-		2BD13CFC1AA93AB700A4AE64 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */; };
 		2BD13CFE1AA9473100A4AE64 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */; };
 		2BD13D041AA9543300A4AE64 /* PartyEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13D031AA9543300A4AE64 /* PartyEditViewController.swift */; };
 		2BD13D061AA9545400A4AE64 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD13D051AA9545400A4AE64 /* ProfileEditViewController.swift */; };
@@ -20,10 +19,15 @@
 		2BD13D0E1AA95B0C00A4AE64 /* AddSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD13D0D1AA95B0C00A4AE64 /* AddSongViewController.xib */; };
 		2BF91E781AAB5B310079CF08 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */; };
 		2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */; };
+		8117D7FB1B25513F00F026ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8117D7FA1B25513F00F026ED /* Main.storyboard */; };
+		8117D7FD1B25548B00F026ED /* RedesignColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D7FC1B25548B00F026ED /* RedesignColors.swift */; };
+		8117D7FF1B25559F00F026ED /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D7FE1B25559F00F026ED /* LaunchScreenViewController.swift */; };
+		8117D8011B2556E700F026ED /* OSVerticalGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */; };
+		8117D8031B26710800F026ED /* FinishedLaunchingSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */; };
+		8117D8061B2686F700F026ED /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8117D8051B2686F700F026ED /* Launch Screen.xib */; };
 		818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63921AA3B12200BAFDD5 /* AppDelegate.swift */; };
 		818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63941AA3B12200BAFDD5 /* HomeViewController.swift */; };
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
-		818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */; };
 		818E63A91AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */; };
 		81B7398E1AA9584E00900FBA /* PartyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398D1AA9584E00900FBA /* PartyMemberViewController.swift */; };
 		81C6D40A1AC4DB1D009DAD28 /* PartyContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398B1AA957B500900FBA /* PartyContentViewController.swift */; };
@@ -47,7 +51,6 @@
 		2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "OneSoundV2Demo/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "OneSoundV2Demo/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		2BD13D031AA9543300A4AE64 /* PartyEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyEditViewController.swift; sourceTree = "<group>"; };
 		2BD13D051AA9545400A4AE64 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +60,17 @@
 		2BD13D0D1AA95B0C00A4AE64 /* AddSongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSongViewController.xib; sourceTree = "<group>"; };
 		2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToProfileTransitionAnimator.swift; sourceTree = "<group>"; };
+		8117D7FA1B25513F00F026ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8117D7FC1B25548B00F026ED /* RedesignColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedesignColors.swift; sourceTree = "<group>"; };
+		8117D7FE1B25559F00F026ED /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSVerticalGradientView.swift; sourceTree = "<group>"; };
+		8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedLaunchingSegue.swift; sourceTree = "<group>"; };
+		8117D8051B2686F700F026ED /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		818E638D1AA3B12200BAFDD5 /* OneSoundV2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSoundV2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63911AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63921AA3B12200BAFDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818E63941AA3B12200BAFDD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		818E63991AA3B12200BAFDD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		818E639C1AA3B12200BAFDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		818E63A21AA3B12200BAFDD5 /* OneSoundV2DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSoundV2DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63A71AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63A81AA3B12200BAFDD5 /* OneSoundV2DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSoundV2DemoTests.swift; sourceTree = "<group>"; };
@@ -104,6 +112,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8117D8041B26734300F026ED /* Adam's summer redesign */ = {
+			isa = PBXGroup;
+			children = (
+				8117D7FA1B25513F00F026ED /* Main.storyboard */,
+				8117D8051B2686F700F026ED /* Launch Screen.xib */,
+				8117D7FC1B25548B00F026ED /* RedesignColors.swift */,
+				8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */,
+				8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */,
+				8117D7FE1B25559F00F026ED /* LaunchScreenViewController.swift */,
+				818E63941AA3B12200BAFDD5 /* HomeViewController.swift */,
+			);
+			name = "Adam's summer redesign";
+			sourceTree = "<group>";
+		};
 		818E63841AA3B12200BAFDD5 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +155,6 @@
 				81C6D4111AC4E3F3009DAD28 /* Podfile */,
 				818E63921AA3B12200BAFDD5 /* AppDelegate.swift */,
 				2BD13D0B1AA95AE300A4AE64 /* AddSongViewController.swift */,
-				818E63941AA3B12200BAFDD5 /* HomeViewController.swift */,
 				81FB5C4B1AA3CA7B003B83E3 /* PartyPageViewController.swift */,
 				81B7398B1AA957B500900FBA /* PartyContentViewController.swift */,
 				81B7398D1AA9584E00900FBA /* PartyMemberViewController.swift */,
@@ -141,12 +162,11 @@
 				2BD13CF91AA8A25000A4AE64 /* ProfileViewController.swift */,
 				2BD13D051AA9545400A4AE64 /* ProfileEditViewController.swift */,
 				2BD13D0D1AA95B0C00A4AE64 /* AddSongViewController.xib */,
-				2BD13CFB1AA93AB700A4AE64 /* HomeViewController.xib */,
 				2BD13CFD1AA9473100A4AE64 /* ProfileViewController.xib */,
 				2BD13D071AA954AC00A4AE64 /* PartyEditViewController.xib */,
 				2BD13D091AA954D800A4AE64 /* ProfileEditViewController.xib */,
 				818E63991AA3B12200BAFDD5 /* Images.xcassets */,
-				818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */,
+				8117D8041B26734300F026ED /* Adam's summer redesign */,
 				818E63901AA3B12200BAFDD5 /* Supporting Files */,
 				2BF91E771AAB5B310079CF08 /* NavigationControllerDelegate.swift */,
 				2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */,
@@ -275,10 +295,10 @@
 				2BD13D0A1AA954D800A4AE64 /* ProfileEditViewController.xib in Resources */,
 				81C6D4121AC4E3F3009DAD28 /* Podfile in Resources */,
 				2BD13D081AA954AC00A4AE64 /* PartyEditViewController.xib in Resources */,
-				818E639D1AA3B12200BAFDD5 /* LaunchScreen.xib in Resources */,
 				818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */,
+				8117D8061B2686F700F026ED /* Launch Screen.xib in Resources */,
+				8117D7FB1B25513F00F026ED /* Main.storyboard in Resources */,
 				2BD13CFE1AA9473100A4AE64 /* ProfileViewController.xib in Resources */,
-				2BD13CFC1AA93AB700A4AE64 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,13 +354,17 @@
 				2BD13D041AA9543300A4AE64 /* PartyEditViewController.swift in Sources */,
 				2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */,
 				2B0577161AC347120019A6AC /* UIImage+ImageEffects.m in Sources */,
+				8117D8031B26710800F026ED /* FinishedLaunchingSegue.swift in Sources */,
 				2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */,
 				2BF91E781AAB5B310079CF08 /* NavigationControllerDelegate.swift in Sources */,
 				81C6D40A1AC4DB1D009DAD28 /* PartyContentViewController.swift in Sources */,
+				8117D7FD1B25548B00F026ED /* RedesignColors.swift in Sources */,
 				2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */,
 				2BD13D061AA9545400A4AE64 /* ProfileEditViewController.swift in Sources */,
 				818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */,
+				8117D8011B2556E700F026ED /* OSVerticalGradientView.swift in Sources */,
 				81B7398E1AA9584E00900FBA /* PartyMemberViewController.swift in Sources */,
+				8117D7FF1B25559F00F026ED /* LaunchScreenViewController.swift in Sources */,
 				2BD13D0C1AA95AE300A4AE64 /* AddSongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,17 +386,6 @@
 			targetProxy = 818E63A31AA3B12200BAFDD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		818E639B1AA3B12200BAFDD5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				818E639C1AA3B12200BAFDD5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		818E63AA1AA3B12200BAFDD5 /* Debug */ = {

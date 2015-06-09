@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="47N-Sf-elz">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-Uc-Hcj" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-in-XvP">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ksW-nQ-VYz">
+                            <rect key="frame" x="214" y="238" width="172" height="124"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.064700194360444441" green="0.50558035714285721" blue="0.3716624557792631" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="RBe-in-XvP" firstAttribute="leading" secondItem="sSB-Uc-Hcj" secondAttribute="leading" id="3DZ-Fk-r8M"/>
+                        <constraint firstItem="RBe-in-XvP" firstAttribute="top" secondItem="sSB-Uc-Hcj" secondAttribute="top" id="L8m-BY-imi"/>
+                        <constraint firstAttribute="trailing" secondItem="RBe-in-XvP" secondAttribute="trailing" id="RUU-H5-KeF"/>
+                        <constraint firstItem="ksW-nQ-VYz" firstAttribute="top" secondItem="sSB-Uc-Hcj" secondAttribute="top" constant="120" id="TIh-xL-JHy"/>
+                        <constraint firstAttribute="centerX" secondItem="ksW-nQ-VYz" secondAttribute="centerX" id="od0-4D-UGs"/>
+                        <constraint firstAttribute="bottom" secondItem="RBe-in-XvP" secondAttribute="bottom" id="pdW-9R-8jw"/>
+                        <constraint firstAttribute="centerY" secondItem="ksW-nQ-VYz" secondAttribute="centerY" id="zVd-dq-egX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TIh-xL-JHy"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sSB-Uc-Hcj" firstAttribute="leading" secondItem="47N-Sf-elz" secondAttribute="leading" id="2JR-ZA-zlV"/>
+                <constraint firstAttribute="trailing" secondItem="sSB-Uc-Hcj" secondAttribute="trailing" id="3ZE-NL-N2M"/>
+                <constraint firstAttribute="bottom" secondItem="sSB-Uc-Hcj" secondAttribute="bottom" id="gn8-fe-Eh5"/>
+                <constraint firstItem="sSB-Uc-Hcj" firstAttribute="top" secondItem="47N-Sf-elz" secondAttribute="top" id="zeF-0b-kwd"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="launchBackground" width="447" height="292"/>
+        <image name="logoWhiteLarge" width="172" height="124"/>
+    </resources>
+</document>

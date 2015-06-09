@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D2s-d6-xms">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="QgE-cy-lF3">
+            <objects>
+                <viewController id="D2s-d6-xms" customClass="LaunchScreenViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ugV-E4-o8e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rxn-np-Plb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cba-kJ-a9S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-BM-HQG" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-k9-eLt" customClass="OSVerticalGradientView" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.057111607402270552" green="0.44628160939645511" blue="0.32807073410595555" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2Hc-k4-RQz">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EHb-iz-DlJ">
+                                        <rect key="frame" x="214" y="238" width="172" height="124"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Hc-k4-RQz" firstAttribute="top" secondItem="8M6-BM-HQG" secondAttribute="top" id="259-oI-fLo"/>
+                                    <constraint firstItem="EHb-iz-DlJ" firstAttribute="top" secondItem="8M6-BM-HQG" secondAttribute="top" constant="120" id="DMe-E5-IvR"/>
+                                    <constraint firstItem="2Hc-k4-RQz" firstAttribute="leading" secondItem="8M6-BM-HQG" secondAttribute="leading" id="DS0-L3-bA3"/>
+                                    <constraint firstItem="zcG-k9-eLt" firstAttribute="top" secondItem="8M6-BM-HQG" secondAttribute="top" id="J5U-lV-djl"/>
+                                    <constraint firstAttribute="bottom" secondItem="zcG-k9-eLt" secondAttribute="bottom" id="Zpr-bx-1Dq"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Hc-k4-RQz" secondAttribute="trailing" id="dWq-lL-w8z"/>
+                                    <constraint firstAttribute="trailing" secondItem="zcG-k9-eLt" secondAttribute="trailing" id="gE3-xi-TEv"/>
+                                    <constraint firstItem="zcG-k9-eLt" firstAttribute="leading" secondItem="8M6-BM-HQG" secondAttribute="leading" id="m7T-YQ-Y5R"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Hc-k4-RQz" secondAttribute="bottom" id="mRR-wN-FOy"/>
+                                    <constraint firstAttribute="centerY" secondItem="EHb-iz-DlJ" secondAttribute="centerY" id="mre-m6-fhm"/>
+                                    <constraint firstAttribute="centerX" secondItem="EHb-iz-DlJ" secondAttribute="centerX" id="sPI-Ib-gof"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DMe-E5-IvR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8M6-BM-HQG" secondAttribute="bottom" id="EjQ-JS-3Lr"/>
+                            <constraint firstAttribute="trailing" secondItem="8M6-BM-HQG" secondAttribute="trailing" id="JcY-0R-dwP"/>
+                            <constraint firstItem="8M6-BM-HQG" firstAttribute="leading" secondItem="cba-kJ-a9S" secondAttribute="leading" id="Nqf-vD-oPb"/>
+                            <constraint firstItem="8M6-BM-HQG" firstAttribute="top" secondItem="cba-kJ-a9S" secondAttribute="top" id="TLs-cj-Qz9"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="8M6-BM-HQG" id="zUP-jp-cIw"/>
+                        <outlet property="logoCenterVerticallyConstraint" destination="mre-m6-fhm" id="4Cd-tI-mgR"/>
+                        <outlet property="logoDistanceFromTopConstraint" destination="DMe-E5-IvR" id="rYY-tp-rVc"/>
+                        <segue destination="D0s-5a-Ev6" kind="custom" identifier="FinishedLaunching" customClass="FinishedLaunchingSegue" customModule="OneSoundV2Demo" id="C6E-Pq-vBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDa-nQ-1j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-384"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="YH9-ei-Oko">
+            <objects>
+                <viewController id="Kpk-Et-1Vd" customClass="HomeViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HoS-AF-xcb"/>
+                        <viewControllerLayoutGuide type="bottom" id="mHv-fA-WYS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eVK-xh-LJF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKG-1X-q2W" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-WR-3m5" customClass="OSVerticalGradientView" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.0571116074" green="0.4462816094" blue="0.32807073409999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qEF-hj-AYt">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="k5U-QQ-pjd">
+                                        <rect key="frame" x="214" y="120" width="172" height="124"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="k5U-QQ-pjd" secondAttribute="centerX" id="8EN-cA-Hdn"/>
+                                    <constraint firstAttribute="bottom" secondItem="qEF-hj-AYt" secondAttribute="bottom" id="NsC-lW-cb1"/>
+                                    <constraint firstAttribute="trailing" secondItem="qEF-hj-AYt" secondAttribute="trailing" id="TxL-Gt-yj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="2c9-WR-3m5" secondAttribute="bottom" id="UiU-5U-S1f"/>
+                                    <constraint firstItem="qEF-hj-AYt" firstAttribute="top" secondItem="qKG-1X-q2W" secondAttribute="top" id="Wcb-eB-t1D"/>
+                                    <constraint firstAttribute="trailing" secondItem="2c9-WR-3m5" secondAttribute="trailing" id="f5A-yp-41R"/>
+                                    <constraint firstItem="qEF-hj-AYt" firstAttribute="leading" secondItem="qKG-1X-q2W" secondAttribute="leading" id="fLX-AV-PBW"/>
+                                    <constraint firstItem="2c9-WR-3m5" firstAttribute="top" secondItem="qKG-1X-q2W" secondAttribute="top" id="jY2-TS-GCw"/>
+                                    <constraint firstItem="k5U-QQ-pjd" firstAttribute="top" secondItem="qKG-1X-q2W" secondAttribute="top" constant="120" id="nRr-fY-N67"/>
+                                    <constraint firstItem="2c9-WR-3m5" firstAttribute="leading" secondItem="qKG-1X-q2W" secondAttribute="leading" id="pCg-lc-3MU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-rJ-slI" userLabel="NavigationBar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.67631840710000002" green="0.0" blue="0.84839904310000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="uUy-mv-Pge"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qKG-1X-q2W" secondAttribute="trailing" id="CU5-B4-vPC"/>
+                            <constraint firstAttribute="bottom" secondItem="qKG-1X-q2W" secondAttribute="bottom" id="cO6-iB-Pxk"/>
+                            <constraint firstItem="iNg-rJ-slI" firstAttribute="top" secondItem="eVK-xh-LJF" secondAttribute="top" id="fm7-Hq-3LB"/>
+                            <constraint firstItem="qKG-1X-q2W" firstAttribute="leading" secondItem="eVK-xh-LJF" secondAttribute="leading" id="gXS-2d-ZkX"/>
+                            <constraint firstItem="qKG-1X-q2W" firstAttribute="top" secondItem="eVK-xh-LJF" secondAttribute="top" id="gYW-SD-uUI"/>
+                            <constraint firstAttribute="trailing" secondItem="iNg-rJ-slI" secondAttribute="trailing" id="qMn-ua-R4r"/>
+                            <constraint firstItem="iNg-rJ-slI" firstAttribute="leading" secondItem="eVK-xh-LJF" secondAttribute="leading" id="rMd-R4-vi6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bJd-Io-mg0"/>
+                    <connections>
+                        <outlet property="navigationBarView" destination="iNg-rJ-slI" id="yeM-Pn-wMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8S-qr-rkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="69Q-0L-ocP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="D0s-5a-Ev6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wve-JX-79m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kpk-Et-1Vd" kind="relationship" relationship="rootViewController" id="29m-yz-FIr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heu-eY-WGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchBackground" width="447" height="292"/>
+        <image name="logoWhiteLarge" width="172" height="124"/>
+    </resources>
+</document>

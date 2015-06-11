@@ -25,6 +25,10 @@
 		8117D8011B2556E700F026ED /* OSVerticalGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */; };
 		8117D8031B26710800F026ED /* FinishedLaunchingSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */; };
 		8117D8061B2686F700F026ED /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8117D8051B2686F700F026ED /* Launch Screen.xib */; };
+		8117D8081B28127B00F026ED /* HomeToPartySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8071B28127B00F026ED /* HomeToPartySegue.swift */; };
+		8117D80A1B28141D00F026ED /* PartyToHomeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D8091B28141D00F026ED /* PartyToHomeSegue.swift */; };
+		8117D80C1B292BEA00F026ED /* RoundedSidesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D80B1B292BEA00F026ED /* RoundedSidesButton.swift */; };
+		8117D80E1B29332A00F026ED /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D80D1B29332A00F026ED /* PartyViewController.swift */; };
 		818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63921AA3B12200BAFDD5 /* AppDelegate.swift */; };
 		818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63941AA3B12200BAFDD5 /* HomeViewController.swift */; };
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
@@ -66,6 +70,10 @@
 		8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSVerticalGradientView.swift; sourceTree = "<group>"; };
 		8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedLaunchingSegue.swift; sourceTree = "<group>"; };
 		8117D8051B2686F700F026ED /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		8117D8071B28127B00F026ED /* HomeToPartySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeToPartySegue.swift; sourceTree = "<group>"; };
+		8117D8091B28141D00F026ED /* PartyToHomeSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyToHomeSegue.swift; sourceTree = "<group>"; };
+		8117D80B1B292BEA00F026ED /* RoundedSidesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedSidesButton.swift; sourceTree = "<group>"; };
+		8117D80D1B29332A00F026ED /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		818E638D1AA3B12200BAFDD5 /* OneSoundV2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSoundV2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63911AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63921AA3B12200BAFDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,8 +128,12 @@
 				8117D7FC1B25548B00F026ED /* RedesignColors.swift */,
 				8117D8001B2556E700F026ED /* OSVerticalGradientView.swift */,
 				8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */,
+				8117D8071B28127B00F026ED /* HomeToPartySegue.swift */,
+				8117D8091B28141D00F026ED /* PartyToHomeSegue.swift */,
 				8117D7FE1B25559F00F026ED /* LaunchScreenViewController.swift */,
 				818E63941AA3B12200BAFDD5 /* HomeViewController.swift */,
+				8117D80B1B292BEA00F026ED /* RoundedSidesButton.swift */,
+				8117D80D1B29332A00F026ED /* PartyViewController.swift */,
 			);
 			name = "Adam's summer redesign";
 			sourceTree = "<group>";
@@ -349,14 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8117D80C1B292BEA00F026ED /* RoundedSidesButton.swift in Sources */,
+				8117D8081B28127B00F026ED /* HomeToPartySegue.swift in Sources */,
 				81FB5C4C1AA3CA7B003B83E3 /* PartyPageViewController.swift in Sources */,
 				818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */,
 				2BD13D041AA9543300A4AE64 /* PartyEditViewController.swift in Sources */,
 				2BD13CFA1AA8A25000A4AE64 /* ProfileViewController.swift in Sources */,
 				2B0577161AC347120019A6AC /* UIImage+ImageEffects.m in Sources */,
+				8117D80E1B29332A00F026ED /* PartyViewController.swift in Sources */,
 				8117D8031B26710800F026ED /* FinishedLaunchingSegue.swift in Sources */,
 				2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */,
 				2BF91E781AAB5B310079CF08 /* NavigationControllerDelegate.swift in Sources */,
+				8117D80A1B28141D00F026ED /* PartyToHomeSegue.swift in Sources */,
 				81C6D40A1AC4DB1D009DAD28 /* PartyContentViewController.swift in Sources */,
 				8117D7FD1B25548B00F026ED /* RedesignColors.swift in Sources */,
 				2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */,

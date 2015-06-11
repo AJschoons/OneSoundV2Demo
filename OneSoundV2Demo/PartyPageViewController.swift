@@ -70,6 +70,7 @@ class PartyPageViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
     // Do any additional setup after loading the view.
     createNavBar()
   }
@@ -90,7 +91,7 @@ class PartyPageViewController: UIViewController {
   }
   
   override func viewDidAppear(animated: Bool) {
-    presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+
   }
   
   

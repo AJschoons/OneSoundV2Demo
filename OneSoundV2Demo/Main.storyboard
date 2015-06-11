@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D2s-d6-xms">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8zp-zW-oNu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -59,6 +59,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="aRF-t2-irD"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -66,12 +67,12 @@
                         <outlet property="backgroundView" destination="8M6-BM-HQG" id="zUP-jp-cIw"/>
                         <outlet property="logoCenterVerticallyConstraint" destination="mre-m6-fhm" id="4Cd-tI-mgR"/>
                         <outlet property="logoDistanceFromTopConstraint" destination="DMe-E5-IvR" id="rYY-tp-rVc"/>
-                        <segue destination="D0s-5a-Ev6" kind="custom" identifier="FinishedLaunching" customClass="FinishedLaunchingSegue" customModule="OneSoundV2Demo" id="C6E-Pq-vBT"/>
+                        <segue destination="Kpk-Et-1Vd" kind="custom" identifier="FinishedLaunching" customClass="FinishedLaunchingSegue" customModule="OneSoundV2Demo" customModuleProvider="target" id="6G5-Ua-QDm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDa-nQ-1j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="-384"/>
+            <point key="canvasLocation" x="918" y="-384"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="YH9-ei-Oko">
@@ -119,44 +120,123 @@
                                     <constraint firstAttribute="height" constant="64" id="uUy-mv-Pge"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vy-bg-T4J" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                <rect key="frame" x="225" y="275" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="The-y7-iWU"/>
+                                    <constraint firstAttribute="height" constant="50" id="peB-rZ-q2F"/>
+                                </constraints>
+                                <state key="normal" title="START PARTY">
+                                    <color key="titleColor" red="0.5170014500617981" green="0.51698595285415649" blue="0.51699477434158325" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wmz-bF-CZk" kind="presentation" modalTransitionStyle="flipHorizontal" id="HAk-vS-3qj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qKG-1X-q2W" secondAttribute="trailing" id="CU5-B4-vPC"/>
+                            <constraint firstAttribute="centerX" secondItem="2vy-bg-T4J" secondAttribute="centerX" id="RrV-qg-S8A"/>
                             <constraint firstAttribute="bottom" secondItem="qKG-1X-q2W" secondAttribute="bottom" id="cO6-iB-Pxk"/>
                             <constraint firstItem="iNg-rJ-slI" firstAttribute="top" secondItem="eVK-xh-LJF" secondAttribute="top" id="fm7-Hq-3LB"/>
                             <constraint firstItem="qKG-1X-q2W" firstAttribute="leading" secondItem="eVK-xh-LJF" secondAttribute="leading" id="gXS-2d-ZkX"/>
                             <constraint firstItem="qKG-1X-q2W" firstAttribute="top" secondItem="eVK-xh-LJF" secondAttribute="top" id="gYW-SD-uUI"/>
                             <constraint firstAttribute="trailing" secondItem="iNg-rJ-slI" secondAttribute="trailing" id="qMn-ua-R4r"/>
                             <constraint firstItem="iNg-rJ-slI" firstAttribute="leading" secondItem="eVK-xh-LJF" secondAttribute="leading" id="rMd-R4-vi6"/>
+                            <constraint firstAttribute="centerY" secondItem="2vy-bg-T4J" secondAttribute="centerY" id="u9R-Ub-mfn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bJd-Io-mg0"/>
                     <connections>
                         <outlet property="navigationBarView" destination="iNg-rJ-slI" id="yeM-Pn-wMp"/>
+                        <outlet property="partyButton" destination="2vy-bg-T4J" id="MM2-tQ-3AD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8S-qr-rkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="352"/>
+            <point key="canvasLocation" x="1700" y="-384"/>
+        </scene>
+        <!--Party View Controller-->
+        <scene sceneID="hs4-9b-cDu">
+            <objects>
+                <viewController id="Wmz-bF-CZk" customClass="PartyViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8K-3c-m8Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="UqX-KG-hrZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EOs-9h-VHP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3h-zp-uO9" userLabel="NavigationBar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.67631840710000002" green="0.0" blue="0.84839904310000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ggC-5H-92q"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-Y1-Mj1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <connections>
+                                    <segue destination="MZU-uv-evW" kind="embed" id="tvw-u6-n0Z"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tdf-Y1-Mj1" firstAttribute="top" secondItem="J3h-zp-uO9" secondAttribute="bottom" id="8xz-I1-BFy"/>
+                            <constraint firstAttribute="trailing" secondItem="J3h-zp-uO9" secondAttribute="trailing" id="L0b-dO-ak4"/>
+                            <constraint firstItem="J3h-zp-uO9" firstAttribute="top" secondItem="EOs-9h-VHP" secondAttribute="top" id="dYe-Zs-Pha"/>
+                            <constraint firstItem="Tdf-Y1-Mj1" firstAttribute="leading" secondItem="EOs-9h-VHP" secondAttribute="leading" id="deV-kK-Xle"/>
+                            <constraint firstItem="J3h-zp-uO9" firstAttribute="leading" secondItem="EOs-9h-VHP" secondAttribute="leading" id="ifU-14-LbS"/>
+                            <constraint firstAttribute="bottom" secondItem="Tdf-Y1-Mj1" secondAttribute="bottom" id="j8a-ug-Ry3"/>
+                            <constraint firstAttribute="trailing" secondItem="Tdf-Y1-Mj1" secondAttribute="trailing" id="loE-d4-LY8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3P-Wb-BSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="-384"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="69Q-0L-ocP">
+        <scene sceneID="K54-bd-TQq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="D0s-5a-Ev6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8zp-zW-oNu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wve-JX-79m">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zv3-Wf-JDI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Kpk-Et-1Vd" kind="relationship" relationship="rootViewController" id="29m-yz-FIr"/>
+                        <segue destination="D2s-d6-xms" kind="relationship" relationship="rootViewController" id="gkc-HX-6Io"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="heu-eY-WGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOB-wB-4xz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="352"/>
+            <point key="canvasLocation" x="212" y="-384"/>
+        </scene>
+        <!--Party Page View Controller-->
+        <scene sceneID="nVm-bS-x9M">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MZU-uv-evW" customClass="PartyPageViewController" customModule="OneSoundV2Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1sK-zK-IhS"/>
+                        <viewControllerLayoutGuide type="bottom" id="g9m-5c-N2k"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kre-lJ-hsx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oy1-0r-i1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="305"/>
         </scene>
     </scenes>
     <resources>

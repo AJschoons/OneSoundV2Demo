@@ -11,23 +11,17 @@ import UIKit
 class HomeViewController: UIViewController
 {
   @IBOutlet weak var navigationBarView: UIView!
-  private(set) var partyButton: UIButton!
+  @IBOutlet weak var partyButton: UIButton!
+  
   private var firstViewDidAppear = true
   
   let AfterLaunchAnimationDuration: NSTimeInterval = 1
   
-  override func viewDidLoad()
-  {
+  override func viewDidLoad() {
     super.viewDidLoad()
     
-    partyButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-    partyButton.frame = CGRectMake(self.view.center.x - 50, self.view.center.y - 25, 100, 50)
-    partyButton.backgroundColor = UIColor.whiteColor()
-    partyButton.layer.cornerRadius = 0.25*partyButton.bounds.width
-    partyButton.setTitle("PARTY", forState: UIControlState.Normal)
-    partyButton.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
-    partyButton.addTarget(self, action: "onPartyButton", forControlEvents: UIControlEvents.TouchUpInside)
-    view.addSubview(partyButton)
+    // Round the left & right edges to be circular
+    partyButton.layer.cornerRadius = 0.5*partyButton.bounds.height
     
     // Hide stuff to be animated for first appearance
     partyButton.alpha = 0
@@ -45,13 +39,6 @@ class HomeViewController: UIViewController
   
   func onProfileButton() {
     navigationController?.popViewControllerAnimated(true)
-  }
-  
-  func onPartyButton() {
-    
-    let partyPageViewController = PartyPageViewController()
-    partyPageViewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-    presentViewController(partyPageViewController, animated: true, completion: nil)
   }
   
   func animateAfterLaunch() {

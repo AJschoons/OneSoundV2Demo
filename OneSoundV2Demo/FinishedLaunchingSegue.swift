@@ -8,12 +8,13 @@
 
 import UIKit
 
-/// Segue for transitioning between launch screen and home screen
+/// Segue for transitioning from Launch to Home
 class FinishedLaunchingSegue: UIStoryboardSegue {
   
   static let Identifier = "FinishedLaunching"
   
   override func perform() {
-    UIApplication.sharedApplication().delegate!.window!!.rootViewController = destinationViewController as? UIViewController
+    // Change the rootViewController of the navigation controller
+    sourceViewController.navigationController??.viewControllers = [destinationViewController]
   }
 }

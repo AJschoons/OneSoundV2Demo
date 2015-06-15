@@ -11,9 +11,8 @@ import UIKit
 let PartyPageViewControllerNibName = "PartyPageViewController"
 
 class PartyPageViewController: UIViewController {
-  
+  /*
   private var scrollView: UIScrollView!
-  private var memberPageView: UIView!
   
   private var navbarView: UIView!
   let navbarHeight: CGFloat = 44
@@ -28,8 +27,11 @@ class PartyPageViewController: UIViewController {
   
   var newNavBar: UINavigationBar?
   
-  var partyContentViewController: PartyContentViewController!
-  
+  private var partyPlaylistViewController: PartyPlaylistViewController!
+  private var partyMembersViewController: PartyMembersViewController!
+  private var partyChildViewControllers = [UIViewController]()
+
+  /*
   override func loadView() {
     // Setup base view
     let screenRect = UIScreen.mainScreen().bounds
@@ -37,7 +39,7 @@ class PartyPageViewController: UIViewController {
     let screenHeight = screenRect.size.height
     view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
     
-    
+  
     // Setup scroll view
     scrollView = UIScrollView(frame: view.frame)
     scrollView.backgroundColor = UIColor.clearColor()
@@ -66,28 +68,54 @@ class PartyPageViewController: UIViewController {
     memberPageView.frame = CGRect(x: 1*viewWidth, y: 0, width: viewWidth, height: viewHeight) // start at x=viewWidth
     scrollView.addSubview(memberPageView)
     
-  }
+  }*/
   
   override func viewDidLoad() {
     super.viewDidLoad()
     modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-    // Do any additional setup after loading the view.
-    createNavBar()
+    
+    // Setup scroll view
+    scrollView = UIScrollView(frame: view.frame)
+    scrollView.backgroundColor = UIColor.clearColor()
+    scrollView.pagingEnabled = true
+    scrollView.showsHorizontalScrollIndicator = false
+    scrollView.showsVerticalScrollIndicator = false
+    scrollView.delegate = self
+    scrollView.bounces = false
+    view.addSubview(scrollView)
+    
+    //
+    // Setup child view controllers
+    //
+    
+    partyPlaylistViewController = storyboard?.instantiateViewControllerWithIdentifier(PartyPlaylistStoryboardIdentifier) as! PartyPlaylistViewController
+    addChildViewController(partyPlaylistViewController)
+    partyChildViewControllers.append(partyPlaylistViewController)
+    
+    partyMembersViewController = storyboard?.instantiateViewControllerWithIdentifier(PartyMembersStoryboardIdentifier) as! PartyMembersViewController
+    addChildViewController(partyMembersViewController)
+    partyChildViewControllers.append(partyMembersViewController)
+    
+    // Add child view controllers to scroll view
+    
+    let scrollViewRect = scrollView.frame
+    let scrollViewWidth = scrollViewRect.width
+    let scrollViewHeight = scrollViewRect.height
+    let scrollViewY = scrollViewRect.origin.y
+    
+    var pagesCount = 0
+    for partyChildViewController in partyChildViewControllers {
+      partyChildViewController.view.frame = CGRectMake(CGFloat(pagesCount)*scrollViewWidth, scrollViewY, scrollViewWidth, scrollViewHeight)
+      scrollView.addSubview(partyChildViewController.view)
+      ++pagesCount
+    }
+    
+    scrollView.contentSize = CGSizeMake(CGFloat(pagesCount)*scrollViewWidth, scrollViewHeight)
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-  
-  override func viewWillLayoutSubviews() {
-    super.viewWillLayoutSubviews()
-    let viewWidth = Int(CGRectGetWidth(view.frame))
-    navbarView.frame = CGRect(x: 0, y: 0, width: viewWidth, height: Int(navbarHeight))
-  }
-  
-  override func viewWillAppear(animated: Bool) {
-    navbarView?.hidden = false
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -226,10 +254,10 @@ extension PartyPageViewController: UIScrollViewDelegate {
     // Set the current page after done scrolling
     let xOffset = scrollView.contentOffset.x
     if xOffset < 1 {
-      pageControl.currentPage = 0
+      //pageControl.currentPage = 0
     } else {
-      pageControl.currentPage = 1
+      //pageControl.currentPage = 1
     }
-  }
+  }*/
 }
 

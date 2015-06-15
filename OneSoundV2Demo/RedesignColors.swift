@@ -12,12 +12,12 @@ extension UIColor {
     
     class func backgroundGradientLightBeginning() -> UIColor
     {
-        return UIColor.colorWithHexString("3DAA7F")
+        return UIColor.colorWithHexString("45B670")
     }
     
     class func backgroundGradientDarkEnd() -> UIColor
     {
-        return UIColor.colorWithHexString("0E7A92")
+        return UIColor.colorWithHexString("1F8C89")
     }
 }
 

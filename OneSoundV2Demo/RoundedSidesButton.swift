@@ -9,6 +9,8 @@
 import UIKit
 
 @IBDesignable
+
+/// Button that rounds the edges of rectanges, and creates circle when height matches width
 class RoundedSidesButton: UIButton {
   
   override func layoutSubviews() {

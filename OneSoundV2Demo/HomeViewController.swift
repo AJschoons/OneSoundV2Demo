@@ -37,8 +37,22 @@ class HomeViewController: UIViewController
     }
   }
   
-  func onProfileButton() {
-    navigationController?.popViewControllerAnimated(true)
+  /// Undo the storyboard segues this view controller causes, and navigate back here
+  @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
+    
+    // Returning from Party Settings, meaning that a Party was left
+    if let sourceViewController = segue.sourceViewController as? PartySettingsViewController {
+      // Undo the animation used to get to Party, similar to HomeToParty segue
+      if let navigationController = navigationController {
+        UIView.animateWithDuration(HomePartyFlipAnimationDuration, delay: 0.0, options: HomePartyFlipAnimationOptions,
+          animations: {
+            navigationController.popViewControllerAnimated(false)
+            UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: navigationController.view, cache: false)
+          },
+          completion: nil
+        )
+      }
+    }
   }
   
   func animateAfterLaunch() {

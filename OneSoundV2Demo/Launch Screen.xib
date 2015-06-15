@@ -13,7 +13,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-Uc-Hcj" userLabel="Background">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-in-XvP">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-in-XvP">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ksW-nQ-VYz">
@@ -47,7 +47,7 @@
         </view>
     </objects>
     <resources>
-        <image name="launchBackground" width="447" height="292"/>
+        <image name="launchBackground" width="895" height="581"/>
         <image name="logoWhiteLarge" width="172" height="124"/>
     </resources>
 </document>

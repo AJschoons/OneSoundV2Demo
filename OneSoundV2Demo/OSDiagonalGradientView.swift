@@ -8,7 +8,8 @@
 
 import UIKit
 
-class OSVerticalGradientView: UIView {
+@IBDesignable
+class OSDiagonalGradientView: UIView {
   
   override func drawRect(rect: CGRect) {
     // Canvas to paint on
@@ -38,8 +39,8 @@ class OSVerticalGradientView: UIView {
     var gradient = CGGradientCreateWithColorComponents(colorSpace, &colorComponents, &locations, locationsSize)
     
     // Draw gradient from start point to end point
-    var startPoint = CGPointMake(0.0, 0.0) // Top of view
-    var endPoint = CGPointMake(0.0, self.frame.size.height) // Bottom of view
+    var startPoint = CGPointMake(0.0, 0.0) // Top left of view
+    var endPoint = CGPointMake(self.frame.size.width, self.frame.size.height) // Bottom right of view
     CGContextDrawLinearGradient(currentContext, gradient, startPoint, endPoint, 0)
     
     // Restore the context

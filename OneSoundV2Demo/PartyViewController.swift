@@ -22,6 +22,12 @@ class PartyViewController: UIViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == EmbedPartyPagedScrollViewControllerSegueIdentifier {
       preparePagedScrollViewControllerFromSegue(segue)
+    } else if segue.identifier == "LeavePartyFromSettingsDismiss" {
+      if let sourceViewController = segue.sourceViewController as? UIViewController {
+        sourceViewController.transitioningDelegate = self
+        sourceViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        sourceViewController.modalPresentationCapturesStatusBarAppearance = true
+      }
     }
   }
   
@@ -54,5 +60,13 @@ extension PartyViewController: OSPagedScrollViewControllerDelegate {
   // Used to set the appropriate page for the Page Control
   func pagedScrollViewControllerDidScrollToPage(page: Int, withViewController: UIViewController) {
 
+  }
+}
+
+extension PartyViewController: UIViewControllerTransitioningDelegate {
+  
+  
+  func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return LeavePartyFromSettingsDismissTransitionAnimator()
   }
 }

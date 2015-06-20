@@ -29,6 +29,8 @@
 		8117D80E1B29332A00F026ED /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D80D1B29332A00F026ED /* PartyViewController.swift */; };
 		8117D8101B2DF66C00F026ED /* OSPagedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117D80F1B2DF66C00F026ED /* OSPagedScrollViewController.swift */; };
 		813EBB6F1B2E4EC800FDA12C /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EBB6E1B2E4EC800FDA12C /* DismissSegue.swift */; };
+		813EBB741B2FB57D00FDA12C /* LeavePartyFromSettingsSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EBB731B2FB57D00FDA12C /* LeavePartyFromSettingsSegue.swift */; };
+		813EBB7B1B33AE1F00FDA12C /* LeavePartyFromSettingsDismissTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EBB7A1B33AE1F00FDA12C /* LeavePartyFromSettingsDismissTransitionAnimator.swift */; };
 		818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63921AA3B12200BAFDD5 /* AppDelegate.swift */; };
 		818E63951AA3B12200BAFDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E63941AA3B12200BAFDD5 /* HomeViewController.swift */; };
 		818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818E63991AA3B12200BAFDD5 /* Images.xcassets */; };
@@ -74,6 +76,8 @@
 		8117D80D1B29332A00F026ED /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		8117D80F1B2DF66C00F026ED /* OSPagedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSPagedScrollViewController.swift; path = ../OSPagedScrollViewController.swift; sourceTree = "<group>"; };
 		813EBB6E1B2E4EC800FDA12C /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		813EBB731B2FB57D00FDA12C /* LeavePartyFromSettingsSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeavePartyFromSettingsSegue.swift; sourceTree = "<group>"; };
+		813EBB7A1B33AE1F00FDA12C /* LeavePartyFromSettingsDismissTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeavePartyFromSettingsDismissTransitionAnimator.swift; path = ../../../../../../.Trash/LeavePartyFromSettingsDismissTransitionAnimator.swift; sourceTree = "<group>"; };
 		818E638D1AA3B12200BAFDD5 /* OneSoundV2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSoundV2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818E63911AA3B12200BAFDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818E63921AA3B12200BAFDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				81B7398B1AA957B500900FBA /* PartyPlaylistViewController.swift */,
 				81B7398D1AA9584E00900FBA /* PartyMembersViewController.swift */,
 				2BD13D031AA9543300A4AE64 /* PartySettingsViewController.swift */,
+				813EBB7A1B33AE1F00FDA12C /* LeavePartyFromSettingsDismissTransitionAnimator.swift */,
 			);
 			name = "Adam's summer redesign";
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				8117D8071B28127B00F026ED /* HomeToPartySegue.swift */,
+				813EBB731B2FB57D00FDA12C /* LeavePartyFromSettingsSegue.swift */,
 				813EBB6E1B2E4EC800FDA12C /* DismissSegue.swift */,
 				8117D8091B28141D00F026ED /* PartyToHomeSegue.swift */,
 				8117D8021B26710800F026ED /* FinishedLaunchingSegue.swift */,
@@ -384,10 +390,12 @@
 				81C6D40A1AC4DB1D009DAD28 /* PartyPlaylistViewController.swift in Sources */,
 				8117D7FD1B25548B00F026ED /* RedesignColors.swift in Sources */,
 				2BF91E7A1AAB62390079CF08 /* ToProfileTransitionAnimator.swift in Sources */,
+				813EBB7B1B33AE1F00FDA12C /* LeavePartyFromSettingsDismissTransitionAnimator.swift in Sources */,
 				2BD13D061AA9545400A4AE64 /* ProfileEditViewController.swift in Sources */,
 				818E63931AA3B12200BAFDD5 /* AppDelegate.swift in Sources */,
 				8117D8011B2556E700F026ED /* OSDiagonalGradientView.swift in Sources */,
 				81B7398E1AA9584E00900FBA /* PartyMembersViewController.swift in Sources */,
+				813EBB741B2FB57D00FDA12C /* LeavePartyFromSettingsSegue.swift in Sources */,
 				8117D7FF1B25559F00F026ED /* LaunchScreenViewController.swift in Sources */,
 				2BD13D0C1AA95AE300A4AE64 /* AddSongViewController.swift in Sources */,
 			);

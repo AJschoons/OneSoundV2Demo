@@ -22,12 +22,6 @@ class PartyViewController: UIViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == EmbedPartyPagedScrollViewControllerSegueIdentifier {
       preparePagedScrollViewControllerFromSegue(segue)
-    } else if segue.identifier == "LeavePartyFromSettingsDismiss" {
-      if let sourceViewController = segue.sourceViewController as? UIViewController {
-        sourceViewController.transitioningDelegate = self
-        sourceViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
-        sourceViewController.modalPresentationCapturesStatusBarAppearance = true
-      }
     }
   }
   
@@ -44,13 +38,33 @@ class PartyViewController: UIViewController {
     }
   }
   
-  /// Undo the storyboard segues this view controller causes, and navigate back here
-  @IBAction func unwindToPartyViewController(segue: UIStoryboardSegue) {
-    
-    // Returning from Party Settings
-    if let sourceViewController = segue.sourceViewController as? PartySettingsViewController {
-      // Presented modally, so we don't actually have to do anything here. Yay storyboards!
-    }
+  /// Undo the storyboard segue to navigate to Party Settings, and navigate back here
+  /// No changes made since done was not pressed
+  @IBAction func unwindFromPartySettingsBack(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
+  }
+  
+  /// Undo the storyboard segue to navigate to Party Settings, and navigate back here
+  /// Changes made since done was pressed
+  @IBAction func unwindFromPartySettingsDone(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
+  }
+  
+  /// Undo the storyboard segue to navigate to Party Add Song, and navigate back here
+  /// No song added since back was pressed
+  @IBAction func unwindFromPartyAddSongBack(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
+  }
+  
+  /// Undo the storyboard segue to navigate to Party Add Song, and navigate back here
+  /// Song was added
+  @IBAction func unwindFromPartyAddSongWithSong(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
+  }
+  
+  /// Undo the storyboard segue to navigate to Profile, and navigate back here
+  @IBAction func unwindFromProfile(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
   }
 }
 
@@ -60,13 +74,5 @@ extension PartyViewController: OSPagedScrollViewControllerDelegate {
   // Used to set the appropriate page for the Page Control
   func pagedScrollViewControllerDidScrollToPage(page: Int, withViewController: UIViewController) {
 
-  }
-}
-
-extension PartyViewController: UIViewControllerTransitioningDelegate {
-  
-  
-  func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-    return LeavePartyFromSettingsDismissTransitionAnimator()
   }
 }

@@ -16,19 +16,8 @@ enum AppRootViewController {
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
-  var ncd: NavigationControllerDelegate?// = NavigationControllerDelegate()
-  
-  var appRootViewController = AppRootViewController.Home
-  
-  var settingsBackgroundImage: UIImage?
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
-    //setupAppWindowAndViewHierarchy()
-    //ncd = NavigationControllerDelegate()
-    //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-    
-    
     return true
   }
   
@@ -56,26 +45,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   
 }
-extension AppDelegate {
-  func setupAppWindowAndViewHierarchy() {
-    // Setup the front nav controller to initially have the splash screen visible with a (determined) view controller as it's rootViewController
-    // By default starts at the profile page (for now)
-    window = UIWindow(frame: UIScreen.mainScreen().bounds)
-    
-    //use nib, but programmatically allows custom animations
-    //let hvc = HomeViewController(nibName: HomeViewControllerNibName, bundle: nil)
-    //let navC = UINavigationController(rootViewController: hvc)
-    
-    let homeViewController = HomeViewController()
-    let profileViewController = ProfileViewController()
-    let navC = UINavigationController(rootViewController: profileViewController)
-    navC.pushViewController(homeViewController, animated: false)
-    
-    window!.rootViewController = navC
-    window!.makeKeyAndVisible()
-    
-  }
-  
-}
-
 

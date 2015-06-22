@@ -8,7 +8,7 @@
 
 import UIKit
 
-let HomePartyFlipAnimationDuration = NSTimeInterval(0.6)
+let HomePartyFlipAnimationDuration = NSTimeInterval(0.5)
 let HomePartyFlipAnimationOptions = UIViewAnimationOptions.CurveEaseInOut
 
 /// Segue for transitioning from Home to Party

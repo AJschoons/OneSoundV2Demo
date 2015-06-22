@@ -47,7 +47,7 @@
         </view>
     </objects>
     <resources>
-        <image name="launchBackground" width="895" height="581"/>
+        <image name="launchBackground" width="252" height="520"/>
         <image name="logoWhiteLarge" width="172" height="124"/>
     </resources>
 </document>

@@ -15,75 +15,21 @@ class LeavePartyFromSettingsSegue: UIStoryboardSegue {
   
   override func perform() {
     
-    if let presentingViewController = sourceViewController.presentingViewController as? UINavigationController {
-      if let sourceViewController = sourceViewController as? PartySettingsViewController {
-        if let topViewController =  presentingViewController.topViewController as? PartyViewController {
-          
-          sourceViewController.dismissViewControllerAnimated(true) {
+    if let presentingViewController = sourceViewController.presentingViewController as? UINavigationController, sourceViewController = sourceViewController as? PartySettingsViewController {
+      
+      // Dismiss the modally presented settings
+      sourceViewController.dismissViewControllerAnimated(false) {
+        
+        // Then navigate to the root of the navigation controller, HomeViewController, with a flip animation
+        UIView.animateWithDuration(HomePartyFlipAnimationDuration, delay: 0.0, options: HomePartyFlipAnimationOptions,
+          animations: {
             presentingViewController.popToRootViewControllerAnimated(false)
-          }
-          
-        }
+            UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: presentingViewController.view, cache: false)
+          },
+          completion: nil
+        )
+        
       }
     }
   }
-  
-  /*override func perform() {
-  
-    if let presentingViewController = sourceViewController.presentingViewController as? UINavigationController {
-      if let sourceViewController = sourceViewController as? PartySettingsViewController {
-        if let topViewController =  presentingViewController.topViewController as? PartyViewController {
-          
-          let appDelegateWindow = UIApplication.sharedApplication().delegate!.window!!
-          UIGraphicsBeginImageContextWithOptions(appDelegateWindow.frame.size, true, 1.0)
-          sourceViewController.view.drawViewHierarchyInRect(appDelegateWindow.frame, afterScreenUpdates: false)
-          let screenshot = UIGraphicsGetImageFromCurrentImageContext()
-          UIGraphicsEndImageContext()
-          
-          //let snapshot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(true)
-          
-          //let screenshotImageView = UIImageView(image: screenshot)
-          //topViewController.view.addSubview(snapshot)
-          //topViewController.view.bringSubviewToFront(snapshot)
-
-          UIView.animateWithDuration(12.0, delay: 0.0, options: HomePartyFlipAnimationOptions,
-            animations: {
-              
-              // Have to first dismiss the modally presenting Party Settings before popping to root view controller
-              self.sourceViewController.dismissViewControllerAnimated(false, completion: nil)
-              UIView.setAnimationTransition(UIViewAnimationTransition.None, forView: sourceViewController.view, cache: false)
-            },
-            completion: { something in
-              UIView.animateWithDuration(HomePartyFlipAnimationDuration, delay: 0.0, options: HomePartyFlipAnimationOptions,
-                animations: {
-                  
-                  // Root view controller will be the Home View Controller
-                  presentingViewController.popToRootViewControllerAnimated(false)
-                  
-                  UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: presentingViewController.view, cache: false)
-                },
-                completion: nil
-              )
-            }
-          )
-          /*
-          // Have to first dismiss the modally presenting Party Settings before popping to root view controller
-          sourceViewController.dismissViewControllerAnimated(true) {
-            
-            UIView.animateWithDuration(HomePartyFlipAnimationDuration, delay: 0.0, options: HomePartyFlipAnimationOptions,
-              animations: {
-                
-                // Root view controller will be the Home View Controller
-                presentingViewController.popToRootViewControllerAnimated(false)
-                
-                //UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: presentingViewController.view, cache: false)
-              },
-              completion: nil
-            )
-          }*/
-          
-        }
-      }
-    }
-  }*/
 }

@@ -9,6 +9,8 @@
 import UIKit
 
 @IBDesignable
+
+/// View that draws the OneSound gradient from top-left to bottom-right corners
 class OSDiagonalGradientView: UIView {
   
   override func drawRect(rect: CGRect) {

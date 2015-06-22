@@ -17,8 +17,8 @@ protocol OSPagedScrollViewControllerDelegate {
 
   Instead of the UIPageControl appearing at the bottom of the view controller,
   the delegate of this view controller can place it wherever. This is used to
-  replicate the Twitter-styled navigation bar with the selected page shown in
-  the navigation bar.
+  replicate the 2014-15 Twitter-styled navigation bar with the selected page 
+  shown in the navigation bar.
 */
 class OSPagedScrollViewController: UIViewController {
   

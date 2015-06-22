@@ -8,10 +8,11 @@
 
 import UIKit
 
+/// View controller for when the app has launched and a user isn't in a party
 class HomeViewController: UIViewController
 {
   @IBOutlet weak var navigationBarView: UIView!
-  @IBOutlet weak var partyButton: UIButton!
+  @IBOutlet weak var partyButton: RoundedSidesButton!
   
   private var firstViewDidAppear = true
   
@@ -21,7 +22,7 @@ class HomeViewController: UIViewController
     super.viewDidLoad()
     
     // Round the left & right edges to be circular
-    partyButton.layer.cornerRadius = 0.5*partyButton.bounds.height
+    //partyButton.layer.cornerRadius = 0.5*partyButton.bounds.height
     
     // Hide stuff to be animated for first appearance
     partyButton.alpha = 0
@@ -37,22 +38,9 @@ class HomeViewController: UIViewController
     }
   }
   
-  /// Undo the storyboard segues this view controller causes, and navigate back here
-  @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
-    
-    // Returning from Party Settings, meaning that a Party was left
-    if let sourceViewController = segue.sourceViewController as? PartySettingsViewController {
-      // Undo the animation used to get to Party, similar to HomeToParty segue
-      if let navigationController = navigationController {
-        UIView.animateWithDuration(HomePartyFlipAnimationDuration, delay: 0.0, options: HomePartyFlipAnimationOptions,
-          animations: {
-            navigationController.popViewControllerAnimated(false)
-            UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: navigationController.view, cache: false)
-          },
-          completion: nil
-        )
-      }
-    }
+  /// Undo the storyboard segue to navigate to Profile, and navigate back here
+  @IBAction func unwindFromProfile(segue: UIStoryboardSegue) {
+    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
   }
   
   func animateAfterLaunch() {

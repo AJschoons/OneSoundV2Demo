@@ -10,11 +10,11 @@ import UIKit
 
 let PartyMembersStoryboardIdentifier = "PartyMembers"
 
+/// View controller for the members of a party
 class PartyMembersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 }

@@ -28,11 +28,6 @@ class LaunchScreenViewController: UIViewController {
       finishLaunchingWithAnimation()
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
   /// Animate and navigate the the next view controller after finishing launching
   func finishLaunchingWithAnimation() {
     // Animate the logo from centered to the same top position as the next view controller,

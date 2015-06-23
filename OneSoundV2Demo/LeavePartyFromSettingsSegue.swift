@@ -15,7 +15,7 @@ class LeavePartyFromSettingsSegue: UIStoryboardSegue {
   
   override func perform() {
     
-    if let presentingViewController = sourceViewController.presentingViewController as? UINavigationController, sourceViewController = sourceViewController as? PartySettingsViewController {
+    if let presentingViewController = sourceViewController.presentingViewController as? UINavigationController, sourceViewController = sourceViewController as? UIViewController {
       
       // Dismiss the modally presented settings
       sourceViewController.dismissViewControllerAnimated(false) {

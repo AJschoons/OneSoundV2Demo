@@ -64,7 +64,7 @@ class PartyViewController: UIViewController {
   
   /// Undo the storyboard segue to navigate to Profile, and navigate back here
   @IBAction func unwindFromProfile(segue: UIStoryboardSegue) {
-    // Presented modally, so we don't actually have to do anything here. Yay storyboards!
+    // Show segue, so we don't actually have to do anything here. Yay storyboards!
   }
 }
 

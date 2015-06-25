@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Adam Schoonmaker. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIColor {
   

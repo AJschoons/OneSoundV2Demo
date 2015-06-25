@@ -59,3 +59,27 @@ Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Dem
 Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Demo-SWTableViewCell-prefix.pch
 Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Demo-SWTableViewCell-Private.xcconfig
 Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Demo-SWTableViewCell.xcconfig
+Pods/FXPageControl/LICENSE.md
+Pods/FXPageControl/README.md
+Pods/FXPageControl/FXPageControl/FXPageControl.h
+Pods/FXPageControl/FXPageControl/FXPageControl.m
+Pods/Headers/Private/FXPageControl/FXPageControl.h
+Pods/Headers/Public/FXPageControl/FXPageControl.h
+Pods/Pods.xcodeproj/xcuserdata/adamschoonmaker.xcuserdatad/xcschemes/Pods-OneSoundV2Demo-FXPageControl.xcscheme
+Pods/Target Support Files/Pods-OneSoundV2Demo/Info.plist
+Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo-frameworks.sh
+Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo-umbrella.h
+Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo.modulemap
+Pods/Target Support Files/Pods-OneSoundV2Demo-CSStickyHeaderFlowLayout/Info.plist
+Pods/Target Support Files/Pods-OneSoundV2Demo-CSStickyHeaderFlowLayout/Pods-OneSoundV2Demo-CSStickyHeaderFlowLayout-umbrella.h
+Pods/Target Support Files/Pods-OneSoundV2Demo-CSStickyHeaderFlowLayout/Pods-OneSoundV2Demo-CSStickyHeaderFlowLayout.modulemap
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Info.plist
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl-dummy.m
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl-prefix.pch
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl-Private.xcconfig
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl-umbrella.h
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl.modulemap
+Pods/Target Support Files/Pods-OneSoundV2Demo-FXPageControl/Pods-OneSoundV2Demo-FXPageControl.xcconfig
+Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Info.plist
+Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Demo-SWTableViewCell-umbrella.h
+Pods/Target Support Files/Pods-OneSoundV2Demo-SWTableViewCell/Pods-OneSoundV2Demo-SWTableViewCell.modulemap

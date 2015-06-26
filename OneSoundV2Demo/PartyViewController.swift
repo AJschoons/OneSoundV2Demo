@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FXPageControl
 
 /// The segue for when the PartyViewController is instantiating its embedded PagedScrollViewController
 let EmbedPartyPagedScrollViewControllerSegueIdentifier = "EmbedPartyPagedScrollViewController"
@@ -14,9 +15,12 @@ let EmbedPartyPagedScrollViewControllerSegueIdentifier = "EmbedPartyPagedScrollV
 /// The parent view controller for an entire party
 class PartyViewController: UIViewController {
   
+  @IBOutlet weak var pageControl: FXPageControl!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    pageControl.currentPage = 0;
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -73,6 +77,6 @@ extension PartyViewController: OSPagedScrollViewControllerDelegate {
   
   // Used to set the appropriate page for the Page Control
   func pagedScrollViewControllerDidScrollToPage(page: Int, withViewController: UIViewController) {
-
+    pageControl.currentPage = page
   }
 }

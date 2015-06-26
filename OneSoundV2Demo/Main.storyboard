@@ -261,14 +261,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsY-EX-azj" userLabel="Designable Rect">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-Eg-V0C" userLabel="Profile" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-Eg-V0C" userLabel="Profile" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="rfO-lD-gSr"/>
                                                     <constraint firstAttribute="width" constant="25" id="yTf-NK-1TS"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <state key="normal" image="profileButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -555,14 +554,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkp-ye-bWk" userLabel="Designable Rect">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-mt-B7G" userLabel="Back" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-mt-B7G" userLabel="Back" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="YdJ-ce-WLp"/>
                                                     <constraint firstAttribute="height" constant="25" id="l8S-4P-MZ8"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <state key="normal" image="profileBackButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -819,42 +818,39 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErD-sf-Ui0" userLabel="Designable Rect">
                                         <rect key="frame" x="0.0" y="20" width="375" height="54"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlS-Ef-viD" userLabel="Profile" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlS-Ef-viD" userLabel="Profile" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="9l5-Xc-AJS"/>
                                                     <constraint firstAttribute="width" constant="25" id="WAK-JF-dwC"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <state key="normal" image="profileButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="Oq5-yF-4y4" kind="show" id="8eG-E0-ObD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y5-NR-Cc9" userLabel="Settings" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y5-NR-Cc9" userLabel="Settings">
                                                 <rect key="frame" x="295" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="bhX-Ce-7oj"/>
                                                     <constraint firstAttribute="height" constant="25" id="pf2-8z-JAQ"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <state key="normal" image="settingsButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="92J-Mn-FHX" kind="presentation" id="oZC-4g-fNb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-po-Dc8" userLabel="Add Song" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-po-Dc8" userLabel="Add Song">
                                                 <rect key="frame" x="335" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="J7A-5B-esj"/>
                                                     <constraint firstAttribute="width" constant="25" id="O1r-Ms-1Db"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <state key="normal" image="addButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -958,6 +954,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pageControl" destination="q1p-U0-rbz" id="dXS-EE-9KK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3P-Wb-BSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1206,11 +1205,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addButton" width="25" height="25"/>
         <image name="launchBackground" width="252" height="520"/>
         <image name="logoWhiteLarge" width="172" height="124"/>
+        <image name="profileBackButton" width="25" height="25"/>
+        <image name="profileButton" width="25" height="25"/>
+        <image name="settingsButton" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6G5-Ua-QDm"/>
-        <segue reference="8eG-E0-ObD"/>
+        <segue reference="dhj-wn-7tP"/>
     </inferredMetricsTieBreakers>
 </document>

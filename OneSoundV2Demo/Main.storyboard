@@ -109,14 +109,13 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uef-JE-ohJ" userLabel="Designable Rect">
                                                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdL-uY-rgm" userLabel="Back">
-                                                                                <rect key="frame" x="15" y="10" width="50" height="25"/>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdL-uY-rgm" userLabel="Back">
+                                                                                <rect key="frame" x="15" y="10" width="25" height="25"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="25" id="WAN-Ke-eCL"/>
-                                                                                    <constraint firstAttribute="width" constant="50" id="bvg-hF-bDJ"/>
+                                                                                    <constraint firstAttribute="width" constant="25" id="bvg-hF-bDJ"/>
                                                                                 </constraints>
-                                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                                                <state key="normal" title="Back">
+                                                                                <state key="normal" image="modalBackButton">
                                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 </state>
@@ -130,18 +129,17 @@
                                                                                     <constraint firstAttribute="height" constant="21" id="QOb-b2-GTX"/>
                                                                                     <constraint firstAttribute="width" constant="120" id="pfE-cA-ZI6"/>
                                                                                 </constraints>
-                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                                                 <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbw-Ja-DZe" userLabel="Done">
-                                                                                <rect key="frame" x="300" y="10" width="60" height="25"/>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbw-Ja-DZe" userLabel="Done">
+                                                                                <rect key="frame" x="335" y="10" width="25" height="25"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="width" constant="60" id="aLD-2h-W35"/>
+                                                                                    <constraint firstAttribute="width" constant="25" id="aLD-2h-W35"/>
                                                                                     <constraint firstAttribute="height" constant="25" id="dUM-g7-co2"/>
                                                                                 </constraints>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                                                <state key="normal" title="Done">
+                                                                                <state key="normal" image="doneButton">
                                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 </state>
@@ -323,6 +321,7 @@
                                                     <constraint firstAttribute="width" constant="150" id="The-y7-iWU"/>
                                                     <constraint firstAttribute="height" constant="50" id="peB-rZ-q2F"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                 <state key="normal" title="START PARTY">
                                                     <color key="titleColor" red="0.5170014500617981" green="0.51698595285415649" blue="0.51699477434158325" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -434,18 +433,17 @@
                                                                             <constraint firstAttribute="height" constant="21" id="1WM-Od-Sdz"/>
                                                                             <constraint firstAttribute="width" constant="120" id="LgP-Gb-xec"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-Om-81S" userLabel="Done">
-                                                                        <rect key="frame" x="300" y="10" width="60" height="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-Om-81S" userLabel="Done">
+                                                                        <rect key="frame" x="335" y="10" width="25" height="25"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="25" id="7Jl-F4-Xac"/>
-                                                                            <constraint firstAttribute="width" constant="60" id="KCL-pY-5x2"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="KCL-pY-5x2"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                                        <state key="normal" title="Done">
+                                                                        <state key="normal" image="doneButton">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -453,14 +451,13 @@
                                                                             <segue destination="yC5-jS-IhX" kind="unwind" unwindAction="unwindFromProfileEditDone:" id="Lbg-PQ-Wzu"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-QY-6dr" userLabel="Cancel">
-                                                                        <rect key="frame" x="15" y="10" width="60" height="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-QY-6dr" userLabel="Cancel">
+                                                                        <rect key="frame" x="15" y="10" width="25" height="25"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="25" id="L5R-Yv-WFD"/>
-                                                                            <constraint firstAttribute="width" constant="60" id="NAn-XM-JP7"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="NAn-XM-JP7"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                                        <state key="normal" title="Cancel">
+                                                                        <state key="normal" image="modalBackButton">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -556,7 +553,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-mt-B7G" userLabel="Back" customClass="RoundedSidesButton" customModule="OneSoundV2Demo" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="10" width="25" height="25"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="YdJ-ce-WLp"/>
                                                     <constraint firstAttribute="height" constant="25" id="l8S-4P-MZ8"/>
@@ -574,18 +570,17 @@
                                                     <constraint firstAttribute="height" constant="21" id="5rX-10-0IS"/>
                                                     <constraint firstAttribute="width" constant="120" id="Dnh-93-a0j"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-CX-wIu" userLabel="Edit">
-                                                <rect key="frame" x="310" y="10" width="50" height="25"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-CX-wIu" userLabel="Edit">
+                                                <rect key="frame" x="335" y="10" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="3Nq-cu-7Eo"/>
+                                                    <constraint firstAttribute="width" constant="25" id="3Nq-cu-7Eo"/>
                                                     <constraint firstAttribute="height" constant="25" id="SBa-2v-33k"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                <state key="normal" title="Edit">
+                                                <state key="normal" image="settingsButton">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -616,7 +611,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1063067689538002" green="0.82194298505783081" blue="0.60250616073608398" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NHM-bw-bQu" secondAttribute="trailing" id="CUg-Vf-z1q"/>
                             <constraint firstItem="NHM-bw-bQu" firstAttribute="leading" secondItem="ukr-RL-zW1" secondAttribute="leading" id="MWt-bH-lR2"/>
@@ -670,14 +665,13 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-Gf-Pxg" userLabel="Designable Rect">
                                                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-rd-y7u" userLabel="Back">
-                                                                        <rect key="frame" x="15" y="10" width="50" height="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-rd-y7u" userLabel="Back">
+                                                                        <rect key="frame" x="15" y="10" width="25" height="25"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="25" id="ABv-yo-XwR"/>
-                                                                            <constraint firstAttribute="width" constant="50" id="dc3-Gj-ukX"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="dc3-Gj-ukX"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                                        <state key="normal" title="Back">
+                                                                        <state key="normal" image="modalBackButton">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -691,18 +685,17 @@
                                                                             <constraint firstAttribute="height" constant="21" id="Lzy-Gn-RAq"/>
                                                                             <constraint firstAttribute="width" constant="120" id="RCW-Xs-2r3"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-F8-qBp" userLabel="Done">
-                                                                        <rect key="frame" x="300" y="10" width="60" height="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-F8-qBp" userLabel="Done">
+                                                                        <rect key="frame" x="335" y="10" width="25" height="25"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="60" id="fdj-VE-2WN"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="fdj-VE-2WN"/>
                                                                             <constraint firstAttribute="height" constant="25" id="kOy-G2-aSg"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                                        <state key="normal" title="Done">
+                                                                        <state key="normal" image="doneButton">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -738,7 +731,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Aoi-NP-rhf"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="Leave">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -858,22 +851,22 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="2at-3d-rI8">
-                                                <rect key="frame" x="142" y="5" width="91" height="19"/>
+                                                <rect key="frame" x="144" y="5" width="87" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="19" id="0Nt-5c-xdy"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="hqE-dU-6xx"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="sVA-ll-xyg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXX members" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lSt-wH-zeu">
-                                                <rect key="frame" x="142" y="26" width="91" height="12"/>
+                                                <rect key="frame" x="144" y="26" width="87" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="12" id="Opu-fO-37e"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                                                 <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1008,18 +1001,17 @@
                                                                             <constraint firstAttribute="width" constant="120" id="HOq-Fp-vBG"/>
                                                                             <constraint firstAttribute="height" constant="21" id="KxW-mC-KuR"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUq-aM-Nhc" userLabel="Back">
-                                                                        <rect key="frame" x="15" y="10" width="50" height="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUq-aM-Nhc" userLabel="Back">
+                                                                        <rect key="frame" x="15" y="10" width="25" height="25"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="50" id="Dpm-TO-xZh"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="Dpm-TO-xZh"/>
                                                                             <constraint firstAttribute="height" constant="25" id="agb-U2-aTD"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                                        <state key="normal" title="Back">
+                                                                        <state key="normal" image="modalBackButton">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -1206,14 +1198,16 @@
     </scenes>
     <resources>
         <image name="addButton" width="25" height="25"/>
+        <image name="doneButton" width="25" height="25"/>
         <image name="launchBackground" width="252" height="520"/>
         <image name="logoWhiteLarge" width="172" height="124"/>
+        <image name="modalBackButton" width="25" height="15"/>
         <image name="profileBackButton" width="25" height="25"/>
         <image name="profileButton" width="25" height="25"/>
         <image name="settingsButton" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6G5-Ua-QDm"/>
+        <segue reference="UbI-f5-G3k"/>
         <segue reference="dhj-wn-7tP"/>
     </inferredMetricsTieBreakers>
 </document>

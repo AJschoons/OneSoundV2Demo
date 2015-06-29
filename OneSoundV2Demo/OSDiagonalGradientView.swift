@@ -13,6 +13,9 @@ import UIKit
 /// View that draws the OneSound gradient from top-left to bottom-right corners
 class OSDiagonalGradientView: UIView {
   
+  /// When true the lighter color of the gradient will start in the top left corner, otherwise the darker color will
+  @IBInspectable var isLightBeginningInTopLeft: Bool = true
+  
   override func drawRect(rect: CGRect) {
     // Canvas to paint on
     var currentContext = UIGraphicsGetCurrentContext()
@@ -24,9 +27,9 @@ class OSDiagonalGradientView: UIView {
     var colorSpace = CGColorSpaceCreateDeviceRGB()
     
     // Define start and end colors
-    var startColor = UIColor.backgroundGradientLightBeginning();
+    var startColor = isLightBeginningInTopLeft ? UIColor.backgroundGradientLightBeginning() : UIColor.backgroundGradientDarkEnd()
     var startColorComponents = CGColorGetComponents(startColor.CGColor)
-    var endColor = UIColor.backgroundGradientDarkEnd();
+    var endColor = isLightBeginningInTopLeft ? UIColor.backgroundGradientDarkEnd() : UIColor.backgroundGradientLightBeginning()
     var endColorComponents = CGColorGetComponents(endColor.CGColor)
     
     // Write RGB and alpga components to an array

@@ -17,4 +17,6 @@
 //#import "SWTableViewCell.h"
 //#import "FXPageControl.h"
 
+#import "UIImage+ImageEffects.h"
+
 #endif

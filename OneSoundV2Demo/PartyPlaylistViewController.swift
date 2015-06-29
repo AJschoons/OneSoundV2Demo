@@ -7,37 +7,49 @@
 //
 
 import UIKit
+import CSStickyHeaderFlowLayout
 
 let PartyPlaylistStoryboardIdentifier = "PartyPlaylist"
 
 /// View controller for a party's playlist
 class PartyPlaylistViewController: UIViewController {
   
-    private var tableView: UITableView!
+  @IBOutlet weak var partyPlaylist: UICollectionView!
+  let PartyPlaylistCurrentSongHeaderReuseIdentifier = "PartyPlaylistCurrentSongHeader"
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func loadView() {
-        super.loadView()
-        
+    if let collectionViewLayout = partyPlaylist.collectionViewLayout as? CSStickyHeaderFlowLayout {
+      collectionViewLayout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 300)
+      collectionViewLayout.parallaxHeaderMinimumReferenceSize = CGSizeMake(self.view.frame.size.width, 150)
+      collectionViewLayout.itemSize = CGSizeMake(view.frame.size.width, collectionViewLayout.itemSize.height)
+      collectionViewLayout.parallaxHeaderAlwaysOnTop = true
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    partyPlaylist.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+    partyPlaylist.registerNib(UINib(nibName: PartyPlaylistCurrentSongHeaderNibName, bundle: nil), forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: PartyPlaylistCurrentSongHeaderReuseIdentifier)
+  }
 }
 
-extension PartyPlaylistViewController: UITableViewDelegate {
+extension PartyPlaylistViewController: UICollectionViewDataSource {
+  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 15;
+  }
+  
+  
+  // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+  func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     
+    return partyPlaylist.dequeueReusableCellWithReuseIdentifier("partySongCell", forIndexPath: indexPath) as! UICollectionViewCell
+  }
+  
+  func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+  {
+    return partyPlaylist.dequeueReusableSupplementaryViewOfKind(CSStickyHeaderParallaxHeader, withReuseIdentifier: PartyPlaylistCurrentSongHeaderReuseIdentifier, forIndexPath: indexPath) as! UICollectionReusableView
+  }
 }
 
-extension PartyPlaylistViewController: UITableViewDataSource {
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell();
-        cell.backgroundColor = UIColor.brownColor()
-        return cell
-    }
+extension PartyPlaylistViewController: UICollectionViewDelegate {
+  
 }

@@ -34,11 +34,19 @@ class OSPagedScrollViewController: UIViewController {
     super.viewDidLoad()
     
     setupScrollView()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    // Container view controller doesn't know it's frame size until viewDidLayoutSubviews is called,
+    // so set the frame and setup the pages here
+    scrollView.frame = view.frame
     addScrollViewPages()
   }
   
   private func setupScrollView() {
-    scrollView = UIScrollView(frame: view.frame)
+    scrollView = UIScrollView(frame: CGRectZero)
     scrollView.backgroundColor = UIColor.clearColor()
     scrollView.pagingEnabled = true
     scrollView.showsHorizontalScrollIndicator = false

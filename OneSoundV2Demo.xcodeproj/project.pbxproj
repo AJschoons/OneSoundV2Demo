@@ -33,6 +33,8 @@
 		819C8BD71B391E13002D2834 /* CreatePartyFromHomeModalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C8BD61B391E12002D2834 /* CreatePartyFromHomeModalSegue.swift */; };
 		81B7398E1AA9584E00900FBA /* PartyMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398D1AA9584E00900FBA /* PartyMembersViewController.swift */; };
 		81C6D40A1AC4DB1D009DAD28 /* PartyPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7398B1AA957B500900FBA /* PartyPlaylistViewController.swift */; };
+		81EB790A1B40572D00B31DBC /* PartyPlaylistCurrentSongHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB79081B40572D00B31DBC /* PartyPlaylistCurrentSongHeader.swift */; };
+		81EB790D1B406A2A00B31DBC /* PartyPlaylistCurrentSongHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EB790C1B406A2A00B31DBC /* PartyPlaylistCurrentSongHeader.xib */; };
 		C12D35554ACAEA5A673F37E9 /* Pods_OneSoundV2Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5518E456708CAE8594E382E6 /* Pods_OneSoundV2Demo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -48,8 +50,8 @@
 
 /* Begin PBXFileReference section */
 		2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromProfileTransitionAnimator.swift; sourceTree = "<group>"; };
-		2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "OneSoundV2Demo/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "OneSoundV2Demo/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		2BD13D031AA9543300A4AE64 /* PartySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartySettingsViewController.swift; sourceTree = "<group>"; };
 		2BD13D051AA9545400A4AE64 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToProfileTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 		81B7398B1AA957B500900FBA /* PartyPlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyPlaylistViewController.swift; sourceTree = "<group>"; };
 		81B7398D1AA9584E00900FBA /* PartyMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyMembersViewController.swift; sourceTree = "<group>"; };
 		81C6D4101AC4E179009DAD28 /* OneSoundV2Demo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneSoundV2Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		81EB79081B40572D00B31DBC /* PartyPlaylistCurrentSongHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyPlaylistCurrentSongHeader.swift; sourceTree = "<group>"; };
+		81EB790C1B406A2A00B31DBC /* PartyPlaylistCurrentSongHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PartyPlaylistCurrentSongHeader.xib; path = ../../../../../.Trash/PartyPlaylistCurrentSongHeader.xib; sourceTree = "<group>"; };
 		8DD5789B08A102BE4F305CF5 /* Pods-OneSoundV2Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSoundV2Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CC35E083D2F498AE42A8030C /* Pods-OneSoundV2Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSoundV2Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSoundV2Demo/Pods-OneSoundV2Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				81C6D4101AC4E179009DAD28 /* OneSoundV2Demo-Bridging-Header.h */,
-				2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */,
-				2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */,
 				818E638F1AA3B12200BAFDD5 /* OneSoundV2Demo */,
 				818E63A51AA3B12200BAFDD5 /* OneSoundV2DemoTests */,
 				818E638E1AA3B12200BAFDD5 /* Products */,
@@ -163,6 +165,8 @@
 				819C8BD41B391C8F002D2834 /* CreatePartyViewController.swift */,
 				8117D80D1B29332A00F026ED /* PartyViewController.swift */,
 				81B7398B1AA957B500900FBA /* PartyPlaylistViewController.swift */,
+				81EB79081B40572D00B31DBC /* PartyPlaylistCurrentSongHeader.swift */,
+				81EB790C1B406A2A00B31DBC /* PartyPlaylistCurrentSongHeader.xib */,
 				81B7398D1AA9584E00900FBA /* PartyMembersViewController.swift */,
 				819C8BD21B37CD01002D2834 /* PartyAddSongViewController.swift */,
 				2BD13D031AA9543300A4AE64 /* PartySettingsViewController.swift */,
@@ -171,6 +175,8 @@
 				818E63901AA3B12200BAFDD5 /* Supporting Files */,
 				2BF91E791AAB62390079CF08 /* ToProfileTransitionAnimator.swift */,
 				2B0577121ABF37160019A6AC /* FromProfileTransitionAnimator.swift */,
+				2B0577141AC347120019A6AC /* UIImage+ImageEffects.m */,
+				2B0577151AC347120019A6AC /* UIImage+ImageEffects.h */,
 			);
 			path = OneSoundV2Demo;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EB790D1B406A2A00B31DBC /* PartyPlaylistCurrentSongHeader.xib in Resources */,
 				818E639A1AA3B12200BAFDD5 /* Images.xcassets in Resources */,
 				8117D8061B2686F700F026ED /* Launch Screen.xib in Resources */,
 				8117D7FB1B25513F00F026ED /* Main.storyboard in Resources */,
@@ -372,6 +379,7 @@
 				8117D8031B26710800F026ED /* FinishedLaunchingSegue.swift in Sources */,
 				2B0577131ABF37160019A6AC /* FromProfileTransitionAnimator.swift in Sources */,
 				819C8BD31B37CD01002D2834 /* PartyAddSongViewController.swift in Sources */,
+				81EB790A1B40572D00B31DBC /* PartyPlaylistCurrentSongHeader.swift in Sources */,
 				81C6D40A1AC4DB1D009DAD28 /* PartyPlaylistViewController.swift in Sources */,
 				819C8BD51B391C8F002D2834 /* CreatePartyViewController.swift in Sources */,
 				8117D7FD1B25548B00F026ED /* RedesignColors.swift in Sources */,
@@ -491,6 +499,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneSoundV2Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OneSoundV2Demo-Bridging-Header.h";
@@ -506,6 +515,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneSoundV2Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OneSoundV2Demo-Bridging-Header.h";

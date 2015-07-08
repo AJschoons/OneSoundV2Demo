@@ -14,6 +14,7 @@ class HomeViewController: UIViewController
   @IBOutlet weak var navigationBarView: UIView!
   @IBOutlet weak var partyButton: RoundedSidesButton!
   
+    @IBOutlet weak var profileButton: RoundedSidesButton!
   /// Overlay view used for navigating to other view controllers
   private var navigatingOverlayView: UIView?
   
@@ -73,5 +74,18 @@ class HomeViewController: UIViewController
       self.navigationBarView.alpha = 1
     }
   }
+    
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        if let id = identifier{
+            if id == "unwindFromProfile" {
+                let unwindSegue = HomeToProfileSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                    
+                })
+                return unwindSegue
+            }
+        }
+        
+        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+    }
   
 }

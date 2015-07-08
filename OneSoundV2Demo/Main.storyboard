@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8zp-zW-oNu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8zp-zW-oNu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Launch Screen View Controller-->
@@ -269,7 +269,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Oq5-yF-4y4" kind="show" id="dhj-wn-7tP"/>
+                                                    <segue destination="Oq5-yF-4y4" kind="custom" identifier="homeToProfileSegue" customClass="HomeToProfileSegue" customModule="OneSoundV2Demo" customModuleProvider="target" id="dhj-wn-7tP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -381,6 +381,7 @@
                     <connections>
                         <outlet property="navigationBarView" destination="iNg-rJ-slI" id="yeM-Pn-wMp"/>
                         <outlet property="partyButton" destination="2vy-bg-T4J" id="MM2-tQ-3AD"/>
+                        <outlet property="profileButton" destination="b0K-Eg-V0C" id="bQd-sA-xdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8S-qr-rkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -561,7 +562,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="BSt-G5-hXM" kind="unwind" unwindAction="unwindFromProfile:" id="37N-3Q-clG"/>
+                                                    <segue destination="BSt-G5-hXM" kind="unwind" identifier="unwindFromProfile" unwindAction="unwindFromProfile:" id="37N-3Q-clG"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbV-Mn-vvQ" userLabel="Title">
@@ -1258,7 +1259,7 @@
         <image name="settingsButton" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UbI-f5-G3k"/>
-        <segue reference="8eG-E0-ObD"/>
+        <segue reference="6G5-Ua-QDm"/>
+        <segue reference="dhj-wn-7tP"/>
     </inferredMetricsTieBreakers>
 </document>
